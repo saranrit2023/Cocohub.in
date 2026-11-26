@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Export Products Catalog | [BRAND_NAME] - Indian B2B International Exporter</title>
+  <meta name="description" content="Browse all 28 export commodities and manufactured goods across 6 divisions: Coir & Coco Peat, Spices, Rice & Food, Coconut, Handicrafts, and Textiles from India."/>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <style>
+    @layer base {
+      html, body { margin:0; padding:0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    .tab-btn.active {
+      background-color: #0f2537;
+      color: #ffffff;
+      border-color: #0f2537;
+    }
+  </style>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#000f1d",
+            "primary-container": "#0f2537",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#788da3",
+            "primary-fixed": "#cfe5fd",
+            "primary-fixed-dim": "#b3c9e0",
+            "on-primary-fixed": "#061d2f",
+            "secondary": "#904d00",
+            "secondary-container": "#fe932c",
+            "secondary-fixed": "#ffdcc3",
+            "secondary-fixed-dim": "#ffb77d",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#663500",
+            "tertiary": "#000d22",
+            "tertiary-container": "#012347",
+            "tertiary-fixed": "#d5e3ff",
+            "surface": "#f8f9ff",
+            "surface-bright": "#f8f9ff",
+            "surface-dim": "#ccdbf3",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e6eeff",
+            "surface-container-high": "#dce9ff",
+            "surface-container-highest": "#d5e3fc",
+            "on-surface": "#0d1c2e",
+            "on-surface-variant": "#43474c",
+            "outline": "#74777d",
+            "outline-variant": "#c3c7cd",
+            "error": "#ba1a1a"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen relative">
+
+  <!-- ==================== STICKY TOP NAVIGATION BAR ==================== -->
+  <header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant/60 shadow-[0_1px_3px_0_rgba(15,37,55,0.05)] transition-all duration-200">
+    <div class="hidden sm:flex bg-primary text-surface-container-lowest px-4 lg:px-12 py-1.5 justify-between items-center text-xs border-b border-primary-container">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-secondary-container font-semibold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          GOVT. REGD. STAR EXPORT HOUSE
+        </span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">Active Inventory — FY 2024-25</span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">Incoterms 2020 Cargo Readiness</span>
+      </div>
+      <div class="flex items-center gap-4 text-primary-fixed-dim">
+        <a href="mailto:exports@[brandname].com" class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">mail</span>
+          exports@[brandname].com
+        </a>
+        <span>•</span>
+        <a href="tel:+919820012345" class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">call</span>
+          +91 98200 12345
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="h-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+        <div class="w-11 h-11 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:bg-primary transition-colors">
+          <span class="material-symbols-outlined text-[28px]">anchor</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-xl text-primary leading-tight tracking-tight">[BRAND_NAME]</span>
+          <span class="text-[11px] font-semibold text-outline uppercase tracking-wider">Govt. Regd. Export House</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-page="home" class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Home</a>
+        
+        <!-- Products with Dropdown -->
+        <div class="relative group" id="productsNavTrigger">
+          <a href="products.html" data-page="products" class="text-sm font-bold text-primary border-b-2 border-secondary-container py-1.5 transition-colors inline-flex items-center gap-1">
+            <span>Products</span>
+            <span class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
+          </a>
+          
+          <div id="productsDropdownMenu" class="hidden absolute top-full -left-12 w-[340px] bg-surface-container-lowest border border-outline-variant/70 rounded-xl shadow-xl p-3 z-50">
+            <div class="px-3 py-2 border-b border-outline-variant/40 mb-2">
+              <span class="text-[11px] uppercase font-bold tracking-wider text-outline">6 Certified Export Categories</span>
+            </div>
+            <div class="space-y-1">
+              <a href="products.html?category=coir-peat" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">eco</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Coir &amp; Coco Peat Products</span>
+                  <span class="block text-xs text-on-surface-variant">Blocks, Grow Bags, Fibre, Rope, Mats</span>
+                </div>
+              </a>
+              <a href="products.html?category=spices" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">local_fire_department</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Spices &amp; Masala</span>
+                  <span class="block text-xs text-on-surface-variant">Turmeric, Black Pepper, Cardamom, Cloves, Chilli</span>
+                </div>
+              </a>
+              <a href="products.html?category=rice-food" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">rice_bowl</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Rice &amp; Food Products</span>
+                  <span class="block text-xs text-on-surface-variant">Ponni Rice, Idly Rice, Millets, Ready Foods</span>
+                </div>
+              </a>
+              <a href="products.html?category=coconut" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">nutrition</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Coconut Products</span>
+                  <span class="block text-xs text-on-surface-variant">Virgin Oil, Desiccated, Shell Charcoal, Coir</span>
+                </div>
+              </a>
+              <a href="products.html?category=handicrafts" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">palette</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Handicrafts</span>
+                  <span class="block text-xs text-on-surface-variant">Brass, Bronze Castings, Wooden Art, Decor</span>
+                </div>
+              </a>
+              <a href="products.html?category=textiles" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">checkroom</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Textiles &amp; Garments</span>
+                  <span class="block text-xs text-on-surface-variant">Cotton Fabrics, T-Shirts, Bedsheets, Towels</span>
+                </div>
+              </a>
+            </div>
+            <div class="mt-2 pt-2 border-t border-outline-variant/40 px-2 flex justify-between items-center text-xs">
+              <a href="products.html" class="text-secondary font-bold hover:underline">View All 28 Products →</a>
+              <span class="text-outline">Tuticorin / Chennai / Cochin</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="quality.html" data-page="quality" class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Quality &amp; Certifications</a>
+        <a href="logistics.html" data-page="logistics" class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Logistics</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+919820012345" class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-outline-variant bg-surface hover:bg-surface-container-low transition-colors">
+          <span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+          <div class="text-left">
+            <span class="block text-[10px] uppercase font-bold text-outline leading-none">Trade Desk</span>
+            <span class="font-bold text-xs text-primary leading-tight">+91 98200 12345</span>
+          </div>
+        </a>
+
+        <a href="rfq.html" class="inline-flex items-center justify-center px-5 py-2.5 bg-secondary-container hover:bg-secondary text-surface-container-lowest font-semibold text-sm rounded-lg transition-all shadow-sm hover:shadow-md focus:ring-2 focus:ring-primary focus:ring-offset-2">
+          Request a Quote
+          <span class="material-symbols-outlined ml-1.5 text-[18px]">arrow_forward</span>
+        </a>
+
+        <button id="mobileMenuToggle" class="lg:hidden p-2 rounded-lg text-primary hover:bg-surface-container-low transition-colors" aria-label="Toggle menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-surface-container-lowest border-b border-outline-variant px-4 py-4 space-y-3">
+      <a href="index.html" class="block font-semibold text-primary py-2 border-b border-outline-variant/40">Home</a>
+      <div>
+        <div class="flex items-center justify-between font-semibold text-on-surface-variant py-2">
+          <span>Products (6 Categories)</span>
+          <a href="products.html" class="text-xs text-secondary font-bold">Catalog →</a>
+        </div>
+        <div class="pl-3 space-y-2 text-sm border-l-2 border-secondary-container/40 my-1">
+          <a href="products.html?category=coir-peat" class="block text-on-surface hover:text-primary">Coir &amp; Coco Peat Products</a>
+          <a href="products.html?category=spices" class="block text-on-surface hover:text-primary">Spices &amp; Masala</a>
+          <a href="products.html?category=rice-food" class="block text-on-surface hover:text-primary">Rice &amp; Food Products</a>
+          <a href="products.html?category=coconut" class="block text-on-surface hover:text-primary">Coconut Products</a>
+          <a href="products.html?category=handicrafts" class="block text-on-surface hover:text-primary">Handicrafts</a>
+          <a href="products.html?category=textiles" class="block text-on-surface hover:text-primary">Textiles &amp; Garments</a>
+        </div>
+      </div>
+      <a href="quality.html" class="block font-medium text-on-surface-variant py-2 border-b border-outline-variant/40">Quality &amp; Certifications</a>
+      <a href="logistics.html" class="block font-medium text-on-surface-variant py-2 border-b border-outline-variant/40">Logistics &amp; Port Dispatch</a>
+      <a href="rfq.html" class="block text-center font-bold text-surface-container-lowest bg-secondary-container hover:bg-secondary py-2.5 rounded-lg mt-2">
+        Request an Export Quote
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== CATALOG HEADER & LIVE SEARCH STRIP ==================== -->
+  <main class="w-full pt-28 sm:pt-32 flex-grow">
+    
+    <section class="w-full bg-surface-container-lowest border-b border-outline-variant/50 py-8">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+        
+        <!-- Breadcrumb & Batch Tag -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <nav class="flex items-center gap-1.5 text-xs text-outline font-medium">
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <span class="text-primary font-bold">Products Catalog</span>
+          </nav>
+          <div class="flex items-center gap-2 bg-surface-container-low px-3 py-1 rounded text-xs">
+            <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+            <span class="font-bold text-primary uppercase tracking-wider">Official Export Directory (28 Verified Items)</span>
+            <span class="text-outline">| Ref: DGFT-038902</span>
+          </div>
+        </div>
+
+        <!-- Headline & Live Search Bar -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary tracking-tight">
+              Export Products Catalog
+            </h1>
+            <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">
+              Explore certified Indian agricultural commodities, precision coir substrates, organic spices, foods, handicrafts, and sustainable textiles. Click any product card to open its technical specification view with container loadability, ISPM-15 packaging, and quote options.
+            </p>
+          </div>
+
+          <!-- Live Search Bar -->
+          <div class="w-full lg:w-[480px] flex-shrink-0">
+            <label for="liveSearchInput" class="block text-xs font-bold text-outline uppercase tracking-wider mb-1.5">
+              Live Product &amp; HS Code Search:
+            </label>
+            <div class="relative flex items-center shadow-sm">
+              <span class="material-symbols-outlined absolute left-3.5 text-outline text-[22px]">search</span>
+              <input 
+                id="liveSearchInput" 
+                type="text" 
+                placeholder="Search by Item name, HS Code, or Keyword..."
+                class="w-full pl-11 pr-10 py-3 bg-surface border border-outline-variant/80 rounded-lg text-primary text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all"
+              />
+              <button id="clearSearchBtn" class="hidden absolute right-3 text-outline hover:text-error transition-colors p-1" title="Clear search">
+                <span class="material-symbols-outlined text-[18px]">close</span>
+              </button>
+            </div>
+            <div class="flex items-center justify-between text-xs text-outline mt-1.5 px-0.5">
+              <span>Try: <button class="text-secondary font-semibold hover:underline quick-filter-term" data-term="Turmeric">Turmeric</button>, <button class="text-secondary font-semibold hover:underline quick-filter-term" data-term="Peat">Coco Peat</button>, <button class="text-secondary font-semibold hover:underline quick-filter-term" data-term="Ponni">Ponni Rice</button>, <button class="text-secondary font-semibold hover:underline quick-filter-term" data-term="Cotton">Cotton</button></span>
+              <span id="resultsCounter" class="font-bold text-primary">Showing 28 of 28 products</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CATEGORY FILTER TABS ==================== -->
+    <section class="w-full bg-surface-container-lowest/80 border-b border-outline-variant/40 sticky top-20 z-40 backdrop-blur-md">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 py-3 overflow-x-auto no-scrollbar">
+        <div class="flex items-center gap-2 min-w-max" id="categoryTabsContainer">
+          
+          <button data-cat="all" class="tab-btn active px-4 py-2 rounded-lg border border-outline-variant/60 font-semibold text-xs sm:text-sm transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">apps</span>
+            <span>All Products</span>
+            <span class="px-1.5 py-0.2 rounded-full bg-secondary-container text-white text-[11px] font-bold">28</span>
+          </button>
+
+          <button data-cat="coir-peat" class="tab-btn px-4 py-2 rounded-lg border border-outline-variant/60 bg-surface text-on-surface hover:bg-surface-container font-semibold text-xs sm:text-sm transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-[18px]">eco</span>
+            <span>Coir &amp; Coco Peat</span>
+            <span class="text-outline text-xs">(5)</span>
+          </button>
+
+          <button data-cat="spices" class="tab-btn px-4 py-2 rounded-lg border border-outline-variant/60 bg-surface text-on-surface hover:bg-surface-container font-semibold text-xs sm:text-sm transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-[18px]">local_fire_department</span>
+            <span>Spices &amp; Masala</span>
+            <span class="text-outline text-xs">(5)</span>
+          </button>
+
+          <button data-cat="rice-food" class="tab-btn px-4 py-2 rounded-lg border border-outline-variant/60 bg-surface text-on-surface hover:bg-surface-container font-semibold text-xs sm:text-sm transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-[18px]">rice_bowl</span>
+            <span>Rice &amp; Food</span>
+            <span class="text-outline text-xs">(5)</span>
+          </button>
+
+          <button data-cat="coconut" class="tab-btn px-4 py-2 rounded-lg border border-outline-variant/60 bg-surface text-on-surface hover:bg-surface-container font-semibold text-xs sm:text-sm transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-[18px]">nutrition</span>
+            <span>Coconut Products</span>
+            <span class="text-outline text-xs">(4)</span>
+          </button>
+
+          <button data-cat="handicrafts" class="tab-btn px-4 py-2 rounded-lg border border-outline-variant/60 bg-surface text-on-surface hover:bg-surface-container font-semibold text-xs sm:text-sm transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-[18px]">palette</span>
+            <span>Handicrafts</span>
+            <span class="text-outline text-xs">(4)</span>
+          </button>
+
+          <button data-cat="textiles" class="tab-btn px-4 py-2 rounded-lg border border-outline-variant/60 bg-surface text-on-surface hover:bg-surface-container font-semibold text-xs sm:text-sm transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-[18px]">checkroom</span>
+            <span>Textiles &amp; Garments</span>
+            <span class="text-outline text-xs">(5)</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRODUCTS GRID SECTION ==================== -->
+    <section class="w-full py-10 px-4 sm:px-6 lg:px-12">
+      <div class="max-w-[1440px] mx-auto">
+        
+        <!-- Active Filter Feedback Banner -->
+        <div id="filterBanner" class="hidden mb-6 p-3 rounded-lg bg-surface-container border border-outline-variant/60 flex items-center justify-between text-xs text-primary">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">filter_alt</span>
+            <span id="filterBannerText">Filtered by category</span>
+          </div>
+          <button id="resetAllFiltersBtn" class="text-secondary font-bold hover:underline flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">refresh</span>
+            Reset All Filters
+          </button>
+        </div>
+
+        <!-- Product Cards Grid Container -->
+        <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Populated dynamically by JavaScript -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div id="noResultsState" class="hidden text-center py-16 px-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 my-8">
+          <div class="w-16 h-16 rounded-full bg-surface-container mx-auto flex items-center justify-center text-outline mb-4">
+            <span class="material-symbols-outlined text-[36px]">search_off</span>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-2">No Matching Export Items Found</h3>
+          <p class="text-sm text-on-surface-variant max-w-md mx-auto mb-6">
+            We couldn't find any commodities or manufactured goods matching your current query. Try adjusting your keywords or clearing the category filter.
+          </p>
+          <button id="resetNoResultsBtn" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-surface-container-lowest text-sm font-bold rounded-lg hover:bg-primary-container transition-colors">
+            <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+            View All 28 Products
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-primary-container text-surface border-t border-primary/20 mt-auto">
+    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 pt-14 pb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <div class="w-9 h-9 rounded bg-secondary-container text-surface-container-lowest flex items-center justify-center font-bold">
+              <span class="material-symbols-outlined text-[22px]">anchor</span>
+            </div>
+            <span class="text-xl font-bold text-surface-container-lowest tracking-tight">[BRAND_NAME]</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container-lowest/15 text-surface-container-high text-[10px] font-bold uppercase tracking-wider">STAR EXPORTER</span>
+          </div>
+          <p class="text-sm text-primary-fixed mb-4 leading-relaxed">
+            Government of India registered Star Export House facilitating verified B2B trade of Coir &amp; Coco Peat, Spices, Food Grains, Coconut Products, Handicrafts, and Textiles worldwide under standardized Incoterms 2020.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">DGFT IEC: 0389021488</span>
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">MSME Udyam Verified</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Quick Navigation
+          </h3>
+          <ul class="space-y-2 text-sm text-primary-fixed">
+            <li><a href="index.html" class="hover:text-surface-container-lowest transition-colors">Home Page</a></li>
+            <li><a href="products.html" class="hover:text-surface-container-lowest transition-colors font-bold text-secondary-fixed">Products Catalog (28 Items)</a></li>
+            <li><a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Quality &amp; Certifications</a></li>
+            <li><a href="logistics.html" class="hover:text-surface-container-lowest transition-colors">Logistics &amp; Port Dispatch</a></li>
+            <li><a href="rfq.html" class="hover:text-surface-container-lowest transition-colors">Request a Quote / Proforma</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            India Export Trade Office
+          </h3>
+          <p class="text-sm text-primary-fixed leading-relaxed mb-4">
+            [BRAND_NAME] Towers, Suite 402-405,<br/>
+            Jawaharlal Nehru Port Trust (JNPT) Maritime Hub,<br/>
+            Navi Mumbai, Maharashtra 400707, India
+          </p>
+          <div class="space-y-2 text-xs text-primary-fixed">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary-container text-[18px]">call</span>
+              <span>+91 98200 12345 / +91 22 2789 6500</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary-container text-[18px]">mail</span>
+              <a href="mailto:exports@[brandname].com" class="hover:underline">exports@[brandname].com</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary-container text-[18px]">chat</span>
+              <span>WhatsApp Trade Desk: 24/7 Priority Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Accreditations &amp; Trade Badges
+          </h3>
+          <p class="text-xs text-primary-fixed mb-4 leading-relaxed">
+            Full audit compliance maintained with statutory Indian export councils:
+          </p>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">IEC DGFT</span>
+              <span class="text-[10px] text-primary-fixed-dim">Export Registered</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">APEDA</span>
+              <span class="text-[10px] text-primary-fixed-dim">Agri Certified</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">Spices Board</span>
+              <span class="text-[10px] text-primary-fixed-dim">CRES Audited</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">Coir Board</span>
+              <span class="text-[10px] text-primary-fixed-dim">Substrate Certified</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">ISO 9001</span>
+              <span class="text-[10px] text-primary-fixed-dim">Quality Management</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">FSSAI</span>
+              <span class="text-[10px] text-primary-fixed-dim">Food Safety Central</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-outline/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-fixed-dim">
+        <p>© 2024-2025 [BRAND_NAME] Global Trade Private Limited. All international rights reserved.</p>
+        <p class="text-center md:text-left">Incoterms 2020 Standard: FOB, CIF, CFR, DDP.</p>
+        <div class="flex items-center gap-4">
+          <a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Export Compliance</a>
+          <a href="logistics.html" class="hover:text-surface-container-lowest transition-colors">Incoterms Terms</a>
+          <a href="rfq.html" class="hover:text-surface-container-lowest transition-colors">RFQ Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="site-config.js"></script>
+  <script src="export-data.js"></script>
+  <script src="shared-nav.js"></script>
+  
+  <!-- Interactive Catalog Engine Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let currentCategory = 'all';
+      let searchQuery = '';
+
+      const searchInput = document.getElementById('liveSearchInput');
+      const clearSearchBtn = document.getElementById('clearSearchBtn');
+      const resultsCounter = document.getElementById('resultsCounter');
+      const productsGrid = document.getElementById('productsGrid');
+      const noResultsState = document.getElementById('noResultsState');
+      const filterBanner = document.getElementById('filterBanner');
+      const filterBannerText = document.getElementById('filterBannerText');
+      const resetAllFiltersBtn = document.getElementById('resetAllFiltersBtn');
+      const resetNoResultsBtn = document.getElementById('resetNoResultsBtn');
+      const categoryTabs = document.querySelectorAll('.tab-btn');
+
+      // Check URL parameters (e.g. ?category=spices or ?search=turmeric)
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialCat = urlParams.get('category');
+      const initialSearch = urlParams.get('search');
+
+      if (initialCat) {
+        currentCategory = initialCat;
+        updateActiveTabUI(initialCat);
+      }
+      if (initialSearch) {
+        searchQuery = initialSearch;
+        searchInput.value = initialSearch;
+        clearSearchBtn.classList.remove('hidden');
+      }
+
+      function updateActiveTabUI(catId) {
+        categoryTabs.forEach(btn => {
+          if (btn.getAttribute('data-cat') === catId) {
+            btn.classList.add('active', 'bg-primary-container', 'text-white', 'border-primary-container');
+            btn.classList.remove('bg-surface', 'text-on-surface');
+          } else {
+            btn.classList.remove('active', 'bg-primary-container', 'text-white', 'border-primary-container');
+            btn.classList.add('bg-surface', 'text-on-surface');
+          }
+        });
+      }
+
+      function renderCatalog() {
+        const filtered = searchProducts(searchQuery, currentCategory);
+        
+        // Update Counter
+        resultsCounter.textContent = `Showing ${filtered.length} of ${EXPORT_DATA.products.length} products`;
+
+        // Update Filter Banner
+        if (currentCategory !== 'all' || searchQuery.trim() !== '') {
+          filterBanner.classList.remove('hidden');
+          const catObj = getCategoryById(currentCategory);
+          const catName = catObj ? catObj.name : 'All Categories';
+          filterBannerText.innerHTML = `Category: <strong>${catName}</strong> ${searchQuery ? `| Keyword: "<strong>${escapeHtml(searchQuery)}</strong>"` : ''}`;
+        } else {
+          filterBanner.classList.add('hidden');
+        }
+
+        // Handle empty state
+        if (filtered.length === 0) {
+          productsGrid.innerHTML = '';
+          noResultsState.classList.remove('hidden');
+          return;
+        }
+
+        noResultsState.classList.add('hidden');
+
+        // Render Cards - Every Card is fully Clickable to open the Product Specification View
+        productsGrid.innerHTML = filtered.map(item => `
+          <div 
+            onclick="openProductSpecModal('${item.id}')"
+            class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group cursor-pointer transform hover:-translate-y-1"
+          >
+            <div>
+              <!-- Card Image with Badges -->
+              <div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+                <img 
+                  src="${item.image}" 
+                  alt="${escapeHtml(item.name)}" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-60"></div>
+                
+                <!-- Category Chip -->
+                <span class="absolute top-3 left-3 bg-primary/85 backdrop-blur-md text-surface-container-lowest text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+                  ${escapeHtml(item.categoryName)}
+                </span>
+
+                <!-- HS Code Placeholder -->
+                <span class="absolute top-3 right-3 bg-secondary-container text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                  HS ${escapeHtml(item.hsCode)}
+                </span>
+
+                <!-- Origin: Tamil Nadu / South India -->
+                <span class="absolute bottom-2.5 left-3 text-[11px] text-surface-container-lowest font-medium flex items-center gap-1 drop-shadow">
+                  <span class="material-symbols-outlined text-[14px] text-secondary-container">place</span>
+                  ${escapeHtml(item.origin)}
+                </span>
+              </div>
+
+              <!-- Content Area with Realistic Export Metadata -->
+              <div class="p-5">
+                <div class="flex items-center justify-between text-[11px] text-outline mb-1 font-semibold">
+                  <span>${escapeHtml(item.categoryName)}</span>
+                  <span>Incoterms: ${escapeHtml(item.incoterms || 'EXW, FOB, CIF')}</span>
+                </div>
+
+                <h3 class="text-base font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                  ${escapeHtml(item.name)}
+                </h3>
+                
+                <p class="text-xs text-on-surface-variant line-clamp-2 mb-3 leading-relaxed">
+                  ${escapeHtml(item.specs)}
+                </p>
+
+                <!-- Realistic Export Metadata Grid -->
+                <div class="space-y-1.5 text-xs text-on-surface border-t border-outline-variant/40 pt-3 mb-2">
+                  <div class="flex items-center justify-between">
+                    <span class="text-outline font-medium">MOQ:</span>
+                    <span class="font-bold text-secondary text-right truncate max-w-[170px]">${escapeHtml(item.moq)}</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="text-outline font-medium">Packaging:</span>
+                    <span class="font-medium text-primary text-right truncate max-w-[170px]">${escapeHtml(item.packaging)}</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="text-outline font-medium">Dispatch Ports:</span>
+                    <span class="font-bold text-primary text-right truncate max-w-[170px]">${escapeHtml(item.ports || 'Tuticorin / Chennai / Cochin')}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions with the Two Action Buttons: "Request Bulk Quote" and "Request Sample" -->
+            <div class="p-5 pt-0 border-t border-outline-variant/20 flex flex-col gap-2">
+              <div class="flex items-center gap-2 pt-2">
+                <!-- Request Sample Button -->
+                <a 
+                  href="rfq.html?product=${encodeURIComponent(item.id)}&category=${encodeURIComponent(item.category)}&type=sample"
+                  onclick="event.stopPropagation();"
+                  class="flex-1 py-2 px-2.5 rounded-lg border border-secondary text-secondary hover:bg-secondary-fixed/30 text-xs font-bold transition-colors text-center flex items-center justify-center gap-1"
+                  title="Request Lab / Courier Sample"
+                >
+                  <span class="material-symbols-outlined text-[14px]">biotech</span>
+                  <span>Sample</span>
+                </a>
+
+                <!-- Request Bulk Quote Button -->
+                <a 
+                  href="rfq.html?product=${encodeURIComponent(item.id)}&category=${encodeURIComponent(item.category)}&type=bulk"
+                  onclick="event.stopPropagation();"
+                  class="flex-1 py-2 px-2.5 rounded-lg bg-secondary-container hover:bg-secondary text-surface-container-lowest text-xs font-bold transition-all text-center flex items-center justify-center gap-1 shadow-sm"
+                  title="Request Container Proforma Quote"
+                >
+                  <span>Bulk Quote</span>
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+              </div>
+
+              <!-- Quick Spec View Button Trigger -->
+              <button 
+                type="button"
+                onclick="event.stopPropagation(); openProductSpecModal('${item.id}');"
+                class="w-full py-1.5 text-center text-[11px] font-bold text-outline hover:text-primary transition-colors flex items-center justify-center gap-1"
+              >
+                <span class="material-symbols-outlined text-[14px]">tune</span>
+                <span>Open Technical Specification View</span>
+              </button>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Live search typing listener
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        if (searchQuery.trim().length > 0) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+        renderCatalog();
+      });
+
+      // Clear search button
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        clearSearchBtn.classList.add('hidden');
+        searchInput.focus();
+        renderCatalog();
+      });
+
+      // Quick filter search suggestions
+      document.querySelectorAll('.quick-filter-term').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const term = btn.getAttribute('data-term');
+          searchInput.value = term;
+          searchQuery = term;
+          clearSearchBtn.classList.remove('hidden');
+          renderCatalog();
+        });
+      });
+
+      // Category tab switching
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          currentCategory = tab.getAttribute('data-cat');
+          updateActiveTabUI(currentCategory);
+          renderCatalog();
+        });
+      });
+
+      // Reset buttons
+      const resetHandler = () => {
+        currentCategory = 'all';
+        searchQuery = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        updateActiveTabUI('all');
+        renderCatalog();
+      };
+
+      resetAllFiltersBtn.addEventListener('click', resetHandler);
+      resetNoResultsBtn.addEventListener('click', resetHandler);
+
+      // Initial Render
+      renderCatalog();
+    });
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+  </script>
+</body>
+</html>

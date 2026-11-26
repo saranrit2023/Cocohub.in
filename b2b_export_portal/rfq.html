@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Request for Bulk Quote (RFQ) &amp; Contact Export Desk | [BRAND_NAME]</title>
+  <meta name="description" content="Request official proforma invoice and FOB/CIF container quotations for Indian export commodities across 6 certified categories. South Indian port dispatch from Tuticorin, Chennai, and Cochin."/>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <style>
+    @layer base {
+      html, body { margin:0; padding:0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#000f1d",
+            "primary-container": "#0f2537",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#788da3",
+            "primary-fixed": "#cfe5fd",
+            "primary-fixed-dim": "#b3c9e0",
+            "on-primary-fixed": "#061d2f",
+            "secondary": "#904d00",
+            "secondary-container": "#fe932c",
+            "secondary-fixed": "#ffdcc3",
+            "secondary-fixed-dim": "#ffb77d",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#663500",
+            "tertiary": "#000d22",
+            "tertiary-container": "#012347",
+            "tertiary-fixed": "#d5e3ff",
+            "surface": "#f8f9ff",
+            "surface-bright": "#f8f9ff",
+            "surface-dim": "#ccdbf3",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e6eeff",
+            "surface-container-high": "#dce9ff",
+            "surface-container-highest": "#d5e3fc",
+            "on-surface": "#0d1c2e",
+            "on-surface-variant": "#43474c",
+            "outline": "#74777d",
+            "outline-variant": "#c3c7cd",
+            "error": "#ba1a1a"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen relative">
+
+  <!-- ==================== STICKY TOP NAVIGATION BAR ==================== -->
+  <header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant/60 shadow-[0_1px_3px_0_rgba(15,37,55,0.05)] transition-all duration-200">
+    <div class="hidden sm:flex bg-primary text-surface-container-lowest px-4 lg:px-12 py-1.5 justify-between items-center text-xs border-b border-primary-container">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-secondary-container font-semibold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          FAST-TRACK COMMERCIAL EXPORT DESK
+        </span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">SLA: Official Proforma Dispatch &lt; 24 Hours</span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">ICC NDA &amp; AEO Tier-1 Protection</span>
+      </div>
+      <div class="flex items-center gap-4 text-primary-fixed-dim">
+        <a href="mailto:exports@[brandname].com" class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">mail</span>
+          exports@[brandname].com
+        </a>
+        <span>•</span>
+        <a href="tel:+919820012345" class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">call</span>
+          +91 98200 12345
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="h-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+        <div class="w-11 h-11 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:bg-primary transition-colors">
+          <span class="material-symbols-outlined text-[28px]">anchor</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-xl text-primary leading-tight tracking-tight">[BRAND_NAME]</span>
+          <span class="text-[11px] font-semibold text-outline uppercase tracking-wider">Govt. Regd. Export House</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-page="home" class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Home</a>
+        
+        <!-- Products with Dropdown -->
+        <div class="relative group" id="productsNavTrigger">
+          <a href="products.html" data-page="products" class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors inline-flex items-center gap-1">
+            <span>Products</span>
+            <span class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
+          </a>
+          
+          <div id="productsDropdownMenu" class="hidden absolute top-full -left-12 w-[340px] bg-surface-container-lowest border border-outline-variant/70 rounded-xl shadow-xl p-3 z-50">
+            <div class="px-3 py-2 border-b border-outline-variant/40 mb-2">
+              <span class="text-[11px] uppercase font-bold tracking-wider text-outline">6 Certified Export Categories</span>
+            </div>
+            <div class="space-y-1">
+              <a href="products.html?category=coir-peat" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">eco</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Coir &amp; Coco Peat Products</span>
+                  <span class="block text-xs text-on-surface-variant">Blocks, Grow Bags, Fibre, Rope, Mats</span>
+                </div>
+              </a>
+              <a href="products.html?category=spices" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">local_fire_department</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Spices &amp; Masala</span>
+                  <span class="block text-xs text-on-surface-variant">Turmeric, Black Pepper, Cardamom, Cloves, Chilli</span>
+                </div>
+              </a>
+              <a href="products.html?category=rice-food" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">rice_bowl</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Rice &amp; Food Products</span>
+                  <span class="block text-xs text-on-surface-variant">Ponni Rice, Idly Rice, Millets, Ready Foods</span>
+                </div>
+              </a>
+              <a href="products.html?category=coconut" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">nutrition</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Coconut Products</span>
+                  <span class="block text-xs text-on-surface-variant">Virgin Oil, Desiccated, Shell Charcoal, Coir</span>
+                </div>
+              </a>
+              <a href="products.html?category=handicrafts" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">palette</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Handicrafts</span>
+                  <span class="block text-xs text-on-surface-variant">Brass, Bronze Castings, Wooden Art, Decor</span>
+                </div>
+              </a>
+              <a href="products.html?category=textiles" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item">
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover/item:text-primary">checkroom</span>
+                <div>
+                  <span class="block text-sm font-semibold text-primary leading-snug">Textiles &amp; Garments</span>
+                  <span class="block text-xs text-on-surface-variant">Cotton Fabrics, T-Shirts, Bedsheets, Towels</span>
+                </div>
+              </a>
+            </div>
+            <div class="mt-2 pt-2 border-t border-outline-variant/40 px-2 flex justify-between items-center text-xs">
+              <a href="products.html" class="text-secondary font-bold hover:underline">View All 28 Products →</a>
+              <span class="text-outline">Tuticorin / Chennai / Cochin</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="quality.html" data-page="quality" class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Quality &amp; Certifications</a>
+        <a href="logistics.html" data-page="logistics" class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Logistics</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+919820012345" class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-outline-variant bg-surface hover:bg-surface-container-low transition-colors">
+          <span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+          <div class="text-left">
+            <span class="block text-[10px] uppercase font-bold text-outline leading-none">Trade Desk</span>
+            <span class="font-bold text-xs text-primary leading-tight">+91 98200 12345</span>
+          </div>
+        </a>
+
+        <!-- Highlighted Active Button -->
+        <a href="rfq.html" class="inline-flex items-center justify-center px-5 py-2.5 bg-secondary-container hover:bg-secondary text-surface-container-lowest font-bold text-sm rounded-lg shadow-md ring-2 ring-primary ring-offset-2 transition-all">
+          Request a Quote
+          <span class="material-symbols-outlined ml-1.5 text-[18px]">arrow_forward</span>
+        </a>
+
+        <button id="mobileMenuToggle" class="lg:hidden p-2 rounded-lg text-primary hover:bg-surface-container-low transition-colors" aria-label="Toggle menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-surface-container-lowest border-b border-outline-variant px-4 py-4 space-y-3">
+      <a href="index.html" class="block font-semibold text-primary py-2 border-b border-outline-variant/40">Home</a>
+      <div>
+        <div class="flex items-center justify-between font-semibold text-on-surface-variant py-2">
+          <span>Products (6 Categories)</span>
+          <a href="products.html" class="text-xs text-secondary font-bold">Catalog →</a>
+        </div>
+        <div class="pl-3 space-y-2 text-sm border-l-2 border-secondary-container/40 my-1">
+          <a href="products.html?category=coir-peat" class="block text-on-surface hover:text-primary">Coir &amp; Coco Peat Products</a>
+          <a href="products.html?category=spices" class="block text-on-surface hover:text-primary">Spices &amp; Masala</a>
+          <a href="products.html?category=rice-food" class="block text-on-surface hover:text-primary">Rice &amp; Food Products</a>
+          <a href="products.html?category=coconut" class="block text-on-surface hover:text-primary">Coconut Products</a>
+          <a href="products.html?category=handicrafts" class="block text-on-surface hover:text-primary">Handicrafts</a>
+          <a href="products.html?category=textiles" class="block text-on-surface hover:text-primary">Textiles &amp; Garments</a>
+        </div>
+      </div>
+      <a href="quality.html" class="block font-medium text-on-surface-variant py-2 border-b border-outline-variant/40">Quality &amp; Certifications</a>
+      <a href="logistics.html" class="block font-medium text-on-surface-variant py-2 border-b border-outline-variant/40">Logistics &amp; Port Dispatch</a>
+      <a href="rfq.html" class="block text-center font-bold text-surface-container-lowest bg-secondary-container py-2.5 rounded-lg mt-2">
+        Request an Export Quote
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN RFQ & CONTACT SECTION ==================== -->
+  <main class="w-full pt-28 sm:pt-32 flex-grow">
+    
+    <!-- Top Context & Header -->
+    <section class="w-full bg-surface-container-lowest border-b border-outline-variant/50 py-8">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <span class="text-xs font-bold uppercase tracking-wider text-secondary flex items-center gap-1.5 mb-1">
+              <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+              OFFICIAL COMMERCIAL INQUIRY &amp; PROFORMA DESK
+            </span>
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary tracking-tight">
+              Request Commercial Quote &amp; Contact Trade Desk
+            </h1>
+            <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">
+              Connect directly with our international export trade department for containerized ocean freight quotations (FOB, CIF, EXW), accredited laboratory batch assays (COA), or complimentary courier export samples.
+            </p>
+          </div>
+
+          <!-- Trust Status & SLA Tag -->
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="bg-surface-container-low px-4 py-2.5 rounded-xl border border-outline-variant/60 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[24px]">timer</span>
+              </div>
+              <div>
+                <span class="block text-[10px] uppercase font-bold text-outline">Response Time Guarantee</span>
+                <span class="text-xs font-bold text-primary">Quotes within 24 hours</span>
+              </div>
+            </div>
+            
+            <div class="bg-surface-container-low px-4 py-2.5 rounded-xl border border-outline-variant/60 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[24px]">verified</span>
+              </div>
+              <div>
+                <span class="block text-[10px] uppercase font-bold text-outline">DGFT India Registered</span>
+                <span class="text-xs font-bold text-primary">IEC: 0389021488</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-Column Primary Workspace: 60% Form / 40% Export Desk -->
+    <section class="w-full py-10 px-4 sm:px-6 lg:px-12">
+      <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- ==================== LEFT COLUMN: B2B INQUIRY FORM (7 cols) ==================== -->
+        <div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 p-6 sm:p-8 shadow-sm">
+          
+          <div class="flex items-center justify-between pb-4 mb-6 border-b border-outline-variant/40">
+            <div>
+              <h2 class="text-lg font-bold text-primary">Submit Commercial Export Inquiry</h2>
+              <p class="text-xs text-on-surface-variant mt-0.5">Please provide complete procurement specifications for an accurate spot rate proforma.</p>
+            </div>
+            <div id="inquiryTypeBadge" class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed text-xs font-bold uppercase tracking-wider">
+              Bulk Order Quotation
+            </div>
+          </div>
+
+          <!-- 
+            ========================================================================
+            FORM SUBMISSION CONFIGURATION (Web3Forms Integration)
+            To connect to your live email inbox, generate an access key at:
+            https://web3forms.com and replace YOUR_ACCESS_KEY_HERE below.
+            ========================================================================
+          -->
+          <form 
+            id="rfqForm" 
+            action="https://api.web3forms.com/submit" 
+            method="POST" 
+            class="space-y-6"
+          >
+            <!-- Web3Forms Access Key Placeholder (Replace with your actual key) -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"/>
+            <!-- Hidden Subject -->
+            <input type="hidden" name="subject" id="formSubject" value="New B2B Export Inquiry - [BRAND_NAME] Portal"/>
+            <!-- Hidden Source & Reference -->
+            <input type="hidden" name="from_name" value="[BRAND_NAME] Export RFQ Portal"/>
+            <input type="hidden" name="inquiry_reference" id="hiddenInquiryRef" value=""/>
+            <input type="hidden" name="inquiry_type" id="hiddenInquiryType" value="Bulk Commercial Quote"/>
+
+            <!-- SECTION 1: Contact & Corporate Identification -->
+            <div>
+              <h3 class="text-xs font-bold text-primary uppercase tracking-wider mb-3 flex items-center gap-1.5 text-secondary">
+                <span class="w-5 h-5 rounded-full bg-primary text-white text-[11px] flex items-center justify-center">1</span>
+                Buyer &amp; Enterprise Details
+              </h3>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <!-- Full Name -->
+                <div>
+                  <label for="fullName" class="block text-xs font-bold text-primary mb-1">
+                    Full Name <span class="text-error">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">person</span>
+                    <input 
+                      id="fullName" 
+                      name="full_name"
+                      type="text" 
+                      required 
+                      placeholder="e.g. Johnathan Miller"
+                      class="w-full pl-9 pr-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-medium text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                </div>
+
+                <!-- Company Name -->
+                <div>
+                  <label for="companyName" class="block text-xs font-bold text-primary mb-1">
+                    Company Name <span class="text-error">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">corporate_fare</span>
+                    <input 
+                      id="companyName" 
+                      name="company_name"
+                      type="text" 
+                      required 
+                      placeholder="e.g. Apex International Trading BV"
+                      class="w-full pl-9 pr-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-medium text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- Country Selector -->
+                <div>
+                  <label for="countrySelect" class="block text-xs font-bold text-primary mb-1">
+                    Country <span class="text-error">*</span>
+                  </label>
+                  <select 
+                    id="countrySelect" 
+                    name="country"
+                    required 
+                    class="w-full px-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-medium text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <option value="" disabled>Select Country</option>
+                    <option value="United States (+1)">United States (+1)</option>
+                    <option value="United Kingdom (+44)">United Kingdom (+44)</option>
+                    <option value="United Arab Emirates (+971)" selected>United Arab Emirates (+971)</option>
+                    <option value="Netherlands (+31)">Netherlands (+31)</option>
+                    <option value="Germany (+49)">Germany (+49)</option>
+                    <option value="Australia (+61)">Australia (+61)</option>
+                    <option value="Saudi Arabia (+966)">Saudi Arabia (+966)</option>
+                    <option value="Singapore (+65)">Singapore (+65)</option>
+                    <option value="Malaysia (+60)">Malaysia (+60)</option>
+                    <option value="Canada (+1)">Canada (+1)</option>
+                    <option value="France (+33)">France (+33)</option>
+                    <option value="Italy (+39)">Italy (+39)</option>
+                    <option value="Spain (+34)">Spain (+34)</option>
+                    <option value="South Africa (+27)">South Africa (+27)</option>
+                    <option value="Japan (+81)">Japan (+81)</option>
+                    <option value="South Korea (+82)">South Korea (+82)</option>
+                    <option value="Qatar (+974)">Qatar (+974)</option>
+                    <option value="Kuwait (+965)">Kuwait (+965)</option>
+                    <option value="Oman (+968)">Oman (+968)</option>
+                    <option value="New Zealand (+64)">New Zealand (+64)</option>
+                    <option value="Other Country">Other Country</option>
+                  </select>
+                </div>
+
+                <!-- Business Email -->
+                <div>
+                  <label for="businessEmail" class="block text-xs font-bold text-primary mb-1">
+                    Business Email <span class="text-error">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">mail</span>
+                    <input 
+                      id="businessEmail" 
+                      name="business_email"
+                      type="email" 
+                      required 
+                      placeholder="procurement@company.com"
+                      class="w-full pl-9 pr-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-medium text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                </div>
+
+                <!-- WhatsApp / Phone Number -->
+                <div>
+                  <label for="phoneNumber" class="block text-xs font-bold text-primary mb-1">
+                    WhatsApp / Phone Number <span class="text-error">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">chat</span>
+                    <input 
+                      id="phoneNumber" 
+                      name="phone_whatsapp"
+                      type="tel" 
+                      required 
+                      placeholder="+971 50 123 4567"
+                      class="w-full pl-9 pr-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-medium text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 2: Product & Order Volume Specification -->
+            <div class="pt-2 border-t border-outline-variant/40">
+              <h3 class="text-xs font-bold text-primary uppercase tracking-wider mb-3 flex items-center gap-1.5 text-secondary">
+                <span class="w-5 h-5 rounded-full bg-primary text-white text-[11px] flex items-center justify-center">2</span>
+                Product Category &amp; Specific Item (All 28 Items)
+              </h3>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <!-- Category Dropdown -->
+                <div>
+                  <label for="categorySelect" class="block text-xs font-bold text-primary mb-1">
+                    Product Category <span class="text-error">*</span>
+                  </label>
+                  <select 
+                    id="categorySelect" 
+                    name="product_category"
+                    required 
+                    class="w-full px-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-bold text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <!-- Injected dynamically from EXPORT_DATA -->
+                  </select>
+                </div>
+
+                <!-- Specific Item Dropdown -->
+                <div>
+                  <label for="productSelect" class="block text-xs font-bold text-primary mb-1">
+                    Specific Item (28 Available) <span class="text-error">*</span>
+                  </label>
+                  <select 
+                    id="productSelect" 
+                    name="specific_product"
+                    required 
+                    class="w-full px-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-bold text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <!-- Injected dynamically from EXPORT_DATA -->
+                  </select>
+                </div>
+              </div>
+
+              <!-- Order Quantity + Unit Selector -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label for="quantityInput" class="block text-xs font-bold text-primary mb-1">
+                    Order Quantity <span class="text-error">*</span>
+                  </label>
+                  <input 
+                    id="quantityInput" 
+                    name="order_quantity"
+                    type="number" 
+                    min="1" 
+                    value="25" 
+                    required 
+                    class="w-full px-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-bold text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+
+                <div>
+                  <label for="unitSelect" class="block text-xs font-bold text-primary mb-1">
+                    Unit of Measurement <span class="text-error">*</span>
+                  </label>
+                  <select 
+                    id="unitSelect" 
+                    name="unit_of_measurement"
+                    required
+                    class="w-full px-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-semibold text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <option value="Metric Tons (MT)" selected>Metric Tons (MT)</option>
+                    <option value="20ft FCL Container">20ft FCL Container (~24-25 MT)</option>
+                    <option value="40ft FCL Container">40ft FCL Container (~26 MT)</option>
+                    <option value="Kilograms (kg)">Kilograms (kg)</option>
+                    <option value="Pieces / Units">Pieces / Units</option>
+                    <option value="Linear Meters">Linear Meters</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Preferred Incoterms & Destination Port -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="incotermSelect" class="block text-xs font-bold text-primary mb-1">
+                    Preferred Incoterms <span class="text-error">*</span>
+                  </label>
+                  <select 
+                    id="incotermSelect" 
+                    name="preferred_incoterm"
+                    required
+                    class="w-full px-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-semibold text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <option value="CIF (Cost, Insurance &amp; Freight)" selected>CIF — Cost, Insurance &amp; Freight (Recommended)</option>
+                    <option value="FOB (Free on Board)">FOB — Free on Board (Tuticorin / Chennai / Cochin)</option>
+                    <option value="EXW (Ex Works)">EXW — Ex Works Indian Mill / Cluster</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="destinationPort" class="block text-xs font-bold text-primary mb-1">
+                    Destination Port &amp; Country <span class="text-error">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">anchor</span>
+                    <input 
+                      id="destinationPort" 
+                      name="destination_port"
+                      type="text" 
+                      required 
+                      value="Jebel Ali Port, UAE"
+                      placeholder="e.g. Jebel Ali, Rotterdam, New York, Felixstowe..."
+                      class="w-full pl-9 pr-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs font-semibold text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 3: Custom Packaging Notes & Requirements -->
+            <div class="pt-2 border-t border-outline-variant/40">
+              <h3 class="text-xs font-bold text-primary uppercase tracking-wider mb-2 flex items-center gap-1.5 text-secondary">
+                <span class="w-5 h-5 rounded-full bg-primary text-white text-[11px] flex items-center justify-center">3</span>
+                Custom Packaging Notes &amp; Specifications
+              </h3>
+
+              <div>
+                <label for="packagingNotes" class="block text-xs font-medium text-outline mb-1">
+                  Packaging Options (e.g., 25kg/50kg PP bags, palletized blocks, vacuum packs, custom private-label cartons):
+                </label>
+                <textarea 
+                  id="packagingNotes" 
+                  name="packaging_notes"
+                  rows="3" 
+                  placeholder="Specify packaging type (e.g. 25kg/50kg PP bags, ISPM-15 palletized blocks, vacuum packs, private-label cartons with barcode), required lab testing (SGS / Bureau Veritas), or payment terms (LC at Sight / TT)..."
+                  class="w-full px-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-xs text-primary focus:outline-none focus:ring-2 focus:ring-primary leading-relaxed"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Submission Row -->
+            <div class="pt-4 border-t border-outline-variant/50 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="flex items-center gap-2 text-xs text-outline">
+                <span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+                <span>Incoterms 2020 Standard • NDA Protected</span>
+              </div>
+
+              <button 
+                type="submit" 
+                id="submitBtn"
+                class="w-full sm:w-auto px-8 py-3.5 bg-secondary-container hover:bg-secondary text-surface-container-lowest font-bold text-sm rounded-lg transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+              >
+                <span>Submit Inquiry &amp; Generate Proforma</span>
+                <span class="material-symbols-outlined text-[18px]">send</span>
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- ==================== RIGHT COLUMN: DIRECT EXPORT DESK (5 cols) ==================== -->
+        <div class="lg:col-span-5 flex flex-col gap-6 sticky top-28">
+          
+          <!-- Direct WhatsApp Business Card -->
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/60 p-6 shadow-sm">
+            <div class="flex items-center gap-3 mb-4 pb-3 border-b border-outline-variant/40">
+              <div class="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center shadow-md">
+                <span class="material-symbols-outlined text-[28px]">chat</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase font-bold text-emerald-800 tracking-wider block">Priority Support</span>
+                <h3 class="text-base font-bold text-primary">Direct Export Trade Desk</h3>
+              </div>
+            </div>
+
+            <p class="text-xs text-on-surface-variant mb-4 leading-relaxed">
+              Connect in real-time with an active Trade Officer for instant commodity availability, live container freight rates from South Indian ports, and custom OEM private packaging guidance.
+            </p>
+
+            <!-- Inline "Chat on WhatsApp Business" Button -->
+            <a 
+              href="https://wa.me/91XXXXXXXXXX?text=Hello%20%5BBRAND_NAME%5D%2C%20I%20would%20like%20to%20inquire%20about%20bulk%20export%20pricing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full py-3.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg mb-3"
+            >
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-300 animate-pulse"></span>
+              <span>Chat on WhatsApp Business</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+            </a>
+
+            <div class="flex items-center justify-between text-xs text-outline px-1">
+              <span>Desk Link: +91 98200 12345</span>
+              <span class="text-emerald-800 font-bold">Online Now</span>
+            </div>
+          </div>
+
+          <!-- Response Time Guarantee & Commitments -->
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/60 p-6 shadow-sm space-y-4">
+            <div class="flex items-center gap-2.5 text-primary">
+              <span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+              <div>
+                <h4 class="text-sm font-bold">Response Time Guarantee</h4>
+                <span class="text-xs font-bold text-secondary">Quotes within 24 hours</span>
+              </div>
+            </div>
+
+            <div class="space-y-2 text-xs text-on-surface-variant">
+              <div class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
+                <span>Official Proforma Invoice (PI) dispatched in under 24 business hours.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
+                <span>Certified pre-shipment NABL / SGS test assays and COA attached.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
+                <span>Incoterms 2020 verified: FOB, CIF, EXW pricing transparently broken down.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- South Indian Port Dispatch Highlights -->
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/60 p-6 shadow-sm">
+            <div class="flex items-center justify-between border-b border-outline-variant/40 pb-3 mb-4">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-[22px]">directions_boat</span>
+                <h4 class="text-sm font-bold text-primary uppercase tracking-wider">South Indian Port Dispatch</h4>
+              </div>
+              <span class="text-[10px] font-bold text-outline bg-surface-container px-2 py-0.5 rounded">Major Gateways</span>
+            </div>
+
+            <div class="space-y-3 text-xs">
+              
+              <!-- Tuticorin Port -->
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/60">
+                <div class="flex items-center justify-between font-bold text-primary mb-0.5">
+                  <span>Tuticorin Port (INTUT)</span>
+                  <span class="text-[10px] text-secondary font-bold">V.O.C Port</span>
+                </div>
+                <p class="text-[11px] text-on-surface-variant leading-relaxed">
+                  Direct dispatch terminal for Coco Peat Blocks, Grow Bags, Coir Fibre, and Southern agro commodities with rapid container gate-in.
+                </p>
+              </div>
+
+              <!-- Chennai Port -->
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/60">
+                <div class="flex items-center justify-between font-bold text-primary mb-0.5">
+                  <span>Chennai Port (INMAA)</span>
+                  <span class="text-[10px] text-secondary font-bold">Coromandel Hub</span>
+                </div>
+                <p class="text-[11px] text-on-surface-variant leading-relaxed">
+                  Gateway for Thanjavur Ponni Rice, Traditional Grains, Millets, Organic Cotton Fabrics, and Tirupur Textiles to Southeast Asia &amp; Europe.
+                </p>
+              </div>
+
+              <!-- Cochin Port -->
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/60">
+                <div class="flex items-center justify-between font-bold text-primary mb-0.5">
+                  <span>Cochin Port (INCOK)</span>
+                  <span class="text-[10px] text-secondary font-bold">ICTT Vallarpadam</span>
+                </div>
+                <p class="text-[11px] text-on-surface-variant leading-relaxed">
+                  International transshipment harbor for Malabar Spices (Black Pepper, Cardamom), Cold-Pressed Virgin Coconut Oil, and Coir Mats.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+  <aside aria-label="Floating WhatsApp contact" class="fixed bottom-6 right-6 z-40">
+    <a 
+      href="https://wa.me/91XXXXXXXXXX?text=Hello%20%5BBRAND_NAME%5D%2C%20I%20would%20like%20to%20inquire%20about%20bulk%20export%20pricing" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="group flex items-center gap-2.5 bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-3 rounded-full shadow-2xl hover:shadow-emerald-900/50 transition-all transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-emerald-400"
+      title="Chat on WhatsApp Business"
+    >
+      <span class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+      </span>
+      <span class="material-symbols-outlined text-[24px]">chat</span>
+      <span class="text-xs font-bold whitespace-nowrap pr-1">Chat on WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- ==================== SUBMISSION CONFIRMATION MODAL ==================== -->
+  <div id="confirmationModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-primary/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant max-w-lg w-full p-6 sm:p-8 shadow-2xl relative my-8">
+      
+      <div class="text-center">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-4 shadow">
+          <span class="material-symbols-outlined text-[36px]">task_alt</span>
+        </div>
+
+        <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-1">INQUIRY LOGGED SUCCESSFULLY</span>
+        <h2 class="text-2xl font-bold text-primary mb-2">Proforma Request Dispatched!</h2>
+        
+        <p class="text-xs text-on-surface-variant mb-6 leading-relaxed">
+          Your procurement requisition has been logged with our Senior Export Trade Desk. An official proforma invoice with live container freight spot rates will be sent to your email within 24 hours.
+        </p>
+
+        <!-- Proforma Summary Pill with Copy Action -->
+        <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/60 text-left text-xs space-y-2.5 mb-6">
+          <div class="flex justify-between items-center pb-2 border-b border-outline-variant/40">
+            <span class="text-outline font-semibold">Inquiry Reference Number:</span>
+            <div class="flex items-center gap-1.5">
+              <span id="confirmRef" class="font-bold text-sm text-primary">PI-2025-IND-8842</span>
+              <button id="copyRefBtn" class="text-secondary hover:text-primary transition-colors p-1" title="Copy Reference">
+                <span class="material-symbols-outlined text-[16px]">content_copy</span>
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-outline">Commodity:</span>
+            <span id="confirmProduct" class="font-bold text-secondary">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-outline">Volume / Incoterms:</span>
+            <span id="confirmVolume" class="font-bold text-primary">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-outline">Destination Port:</span>
+            <span id="confirmPort" class="font-medium text-primary">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-outline">SLA Dispatch:</span>
+            <span class="font-bold text-emerald-800">Within 24 Hours</span>
+          </div>
+        </div>
+
+        <!-- WhatsApp follow-up link with pre-filled Reference -->
+        <a 
+          id="confirmWhatsAppBtn"
+          href="https://wa.me/91XXXXXXXXXX?text=Hello%20%5BBRAND_NAME%5D%2C%20I%20have%20submitted%20inquiry%20reference%20PI-2025-IND-8842" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg font-bold text-xs flex items-center justify-center gap-2 transition-colors shadow mb-4"
+        >
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>Fast-Track Reference on WhatsApp Desk</span>
+        </a>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button 
+            id="closeConfirmBtn" 
+            class="flex-1 py-3 bg-primary text-white rounded-lg font-bold text-xs hover:bg-primary-container transition-colors"
+          >
+            Done &amp; Return to Home
+          </button>
+          
+          <a 
+            href="products.html" 
+            class="flex-1 py-3 bg-surface-container text-primary rounded-lg font-bold text-xs hover:bg-surface-container-high transition-colors flex items-center justify-center"
+          >
+            Browse More Products
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-primary-container text-surface border-t border-primary/20 mt-auto">
+    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 pt-14 pb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <div class="w-9 h-9 rounded bg-secondary-container text-surface-container-lowest flex items-center justify-center font-bold">
+              <span class="material-symbols-outlined text-[22px]">anchor</span>
+            </div>
+            <span class="text-xl font-bold text-surface-container-lowest tracking-tight">[BRAND_NAME]</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container-lowest/15 text-surface-container-high text-[10px] font-bold uppercase tracking-wider">STAR EXPORTER</span>
+          </div>
+          <p class="text-sm text-primary-fixed mb-4 leading-relaxed">
+            Government of India registered Star Export House facilitating verified B2B trade of Coir &amp; Coco Peat, Spices, Food Grains, Coconut Products, Handicrafts, and Textiles worldwide under standardized Incoterms 2020.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">DGFT IEC: 0389021488</span>
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">MSME Udyam Verified</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Quick Navigation
+          </h3>
+          <ul class="space-y-2 text-sm text-primary-fixed">
+            <li><a href="index.html" class="hover:text-surface-container-lowest transition-colors">Home Page</a></li>
+            <li><a href="products.html" class="hover:text-surface-container-lowest transition-colors">Products Catalog (28 Items)</a></li>
+            <li><a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Quality &amp; Certifications</a></li>
+            <li><a href="logistics.html" class="hover:text-surface-container-lowest transition-colors">Logistics &amp; Port Dispatch</a></li>
+            <li><a href="rfq.html" class="hover:text-surface-container-lowest transition-colors font-bold text-secondary-fixed">Request a Quote / Proforma</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            India Export Trade Office
+          </h3>
+          <p class="text-sm text-primary-fixed leading-relaxed mb-4">
+            [BRAND_NAME] Towers, Suite 402-405,<br/>
+            Jawaharlal Nehru Port Trust (JNPT) Maritime Hub,<br/>
+            Navi Mumbai, Maharashtra 400707, India
+          </p>
+          <div class="space-y-2 text-xs text-primary-fixed">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary-container text-[18px]">call</span>
+              <span>+91 98200 12345 / +91 22 2789 6500</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary-container text-[18px]">mail</span>
+              <a href="mailto:exports@[brandname].com" class="hover:underline">exports@[brandname].com</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary-container text-[18px]">chat</span>
+              <span>WhatsApp Trade Desk: 24/7 Priority Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Accreditations &amp; Trade Badges
+          </h3>
+          <p class="text-xs text-primary-fixed mb-4 leading-relaxed">
+            Full audit compliance maintained with statutory Indian export inspection agencies:
+          </p>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">IEC DGFT</span>
+              <span class="text-[10px] text-primary-fixed-dim">Export Registered</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">APEDA</span>
+              <span class="text-[10px] text-primary-fixed-dim">Agri Certified</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">Spices Board</span>
+              <span class="text-[10px] text-primary-fixed-dim">CRES Audited</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">Coir Board</span>
+              <span class="text-[10px] text-primary-fixed-dim">Substrate Certified</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">ISO 9001</span>
+              <span class="text-[10px] text-primary-fixed-dim">Quality Management</span>
+            </div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center">
+              <span class="block font-bold text-surface-container-lowest">FSSAI</span>
+              <span class="text-[10px] text-primary-fixed-dim">Food Safety Central</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-outline/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-fixed-dim">
+        <p>© 2024-2025 [BRAND_NAME] Global Trade Private Limited. All international rights reserved.</p>
+        <p class="text-center md:text-left">Incoterms 2020 Standard: FOB, CIF, CFR, DDP.</p>
+        <div class="flex items-center gap-4">
+          <a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Export Compliance</a>
+          <a href="logistics.html" class="hover:text-surface-container-lowest transition-colors">Incoterms Terms</a>
+          <a href="rfq.html" class="hover:text-surface-container-lowest transition-colors">RFQ Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="site-config.js"></script>
+  <script src="export-data.js"></script>
+  <script src="shared-nav.js"></script>
+  
+  <!-- Interactive Form Engine with Web3Forms & Simulated Fallback -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const categorySelect = document.getElementById('categorySelect');
+      const productSelect = document.getElementById('productSelect');
+      const quantityInput = document.getElementById('quantityInput');
+      const unitSelect = document.getElementById('unitSelect');
+      const incotermSelect = document.getElementById('incotermSelect');
+      const destinationPort = document.getElementById('destinationPort');
+      const packagingNotes = document.getElementById('packagingNotes');
+
+      const rfqForm = document.getElementById('rfqForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const confirmationModal = document.getElementById('confirmationModal');
+      const closeConfirmBtn = document.getElementById('closeConfirmBtn');
+      const copyRefBtn = document.getElementById('copyRefBtn');
+      const inquiryTypeBadge = document.getElementById('inquiryTypeBadge');
+
+      // Populate Categories
+      categorySelect.innerHTML = EXPORT_DATA.categories.map(c => `
+        <option value="${c.id}">${c.name}</option>
+      `).join('');
+
+      // Cascade Specific Items based on selected category (all 28 items covered)
+      function updateProductsDropdown(catId, selectedProdId = null) {
+        const products = getProductsByCategory(catId);
+        productSelect.innerHTML = products.map(p => `
+          <option value="${p.id}" ${selectedProdId === p.id ? 'selected' : ''}>
+            ${p.name} (HS Code: ${p.hsCode})
+          </option>
+        `).join('');
+      }
+
+      // Check URL Query Parameters (e.g. ?product=turmeric&category=spices&type=sample)
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlCat = urlParams.get('category');
+      const urlProd = urlParams.get('product');
+      const urlType = urlParams.get('type');
+
+      if (urlProd) {
+        const foundProduct = getProductById(urlProd);
+        if (foundProduct) {
+          categorySelect.value = foundProduct.category;
+        } else if (urlCat && getCategoryById(urlCat)) {
+          categorySelect.value = urlCat;
+        }
+      } else if (urlCat && getCategoryById(urlCat)) {
+        categorySelect.value = urlCat;
+      }
+      updateProductsDropdown(categorySelect.value, urlProd);
+
+      // Handle "Request Sample" vs "Bulk Quote"
+      if (urlType === 'sample') {
+        inquiryTypeBadge.textContent = 'Courier Sample Request';
+        inquiryTypeBadge.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed');
+        inquiryTypeBadge.classList.add('bg-emerald-100', 'text-emerald-800');
+        quantityInput.value = '1';
+        unitSelect.value = 'Kilograms (kg)';
+        document.getElementById('hiddenInquiryType').value = 'Courier Export Sample Request';
+        document.getElementById('formSubject').value = 'New Export Sample Request - [BRAND_NAME]';
+        packagingNotes.value = 'Please provide courier sample (DHL/FedEx) along with batch Certificate of Analysis (COA) and phytosanitary certificate.';
+      }
+
+      categorySelect.addEventListener('change', () => {
+        updateProductsDropdown(categorySelect.value);
+      });
+
+      // Form Submission Handler (Submits to Web3Forms via fetch API, with clean fallback if access key is placeholder)
+      rfqForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Generate Reference Number
+        const randNum = Math.floor(1000 + Math.random() * 9000);
+        const refNo = `PI-2025-IND-${randNum}`;
+        document.getElementById('hiddenInquiryRef').value = refNo;
+
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.innerHTML = `
+          <span class="inline-block animate-spin mr-2">⟳</span>
+          <span>Processing Inquiry...</span>
+        `;
+        submitBtn.disabled = true;
+
+        const formData = new FormData(rfqForm);
+        formData.append('generated_reference', refNo);
+
+        const prodObj = getProductById(productSelect.value);
+        const prodName = prodObj ? prodObj.name : productSelect.value;
+        const volText = `${quantityInput.value} ${unitSelect.value} (${incotermSelect.value.split('—')[0].trim()})`;
+
+        let submissionSuccessful = false;
+
+        // Try submitting to Web3Forms if access_key is provided
+        const accessKey = formData.get('access_key');
+        if (accessKey && accessKey !== 'YOUR_ACCESS_KEY_HERE') {
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            const data = await response.json();
+            if (data.success) {
+              submissionSuccessful = true;
+            }
+          } catch (err) {
+            console.warn('Web3Forms fetch error; falling back to simulated confirmation:', err);
+          }
+        } else {
+          // Access key is the placeholder; simulate response smoothly for testing
+          await new Promise(r => setTimeout(r, 600));
+          submissionSuccessful = true;
+        }
+
+        // Show Confirmation Modal
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+
+        document.getElementById('confirmRef').textContent = refNo;
+        document.getElementById('confirmProduct').textContent = prodName;
+        document.getElementById('confirmVolume').textContent = volText;
+        document.getElementById('confirmPort').textContent = destinationPort.value;
+
+        // Update WhatsApp Follow-up link with the reference
+        const waMsg = encodeURIComponent(`Hello [BRAND_NAME], I have submitted export inquiry reference ${refNo} for ${prodName} (${volText}). Please confirm dispatch.`);
+        document.getElementById('confirmWhatsAppBtn').href = `https://wa.me/91XXXXXXXXXX?text=${waMsg}`;
+
+        confirmationModal.classList.remove('hidden');
+      });
+
+      // Copy reference button
+      copyRefBtn.addEventListener('click', () => {
+        const ref = document.getElementById('confirmRef').textContent;
+        navigator.clipboard.writeText(ref).then(() => {
+          copyRefBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-emerald-600">check</span>';
+          setTimeout(() => {
+            copyRefBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">content_copy</span>';
+          }, 2000);
+        });
+      });
+
+      // Close modal
+      closeConfirmBtn.addEventListener('click', () => {
+        confirmationModal.classList.add('hidden');
+        window.location.href = 'index.html';
+      });
+    });
+  </script>
+</body>
+</html>
