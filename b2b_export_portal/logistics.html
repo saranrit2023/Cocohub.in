@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Global Logistics &amp; Port Dispatch | Cocohub - Indian Export Corridors</title>
+  <meta name="description"
+    content="Incoterms 2020 shipping from Nhava Sheva JNPT, Mundra, Chennai, Cochin, and Tuticorin ports. Container stuffing standards and consignment tracking." />
+  <meta property="og:title" content="Global Logistics &amp; Port Dispatch | Cocohub" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#000f1d", "primary-container": "#0f2537", "on-primary": "#ffffff",
+            "on-primary-container": "#788da3", "primary-fixed": "#cfe5fd", "primary-fixed-dim": "#b3c9e0",
+            "on-primary-fixed": "#061d2f", "secondary": "#904d00", "secondary-container": "#fe932c",
+            "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-secondary": "#ffffff",
+            "on-secondary-container": "#663500", "tertiary": "#000d22", "tertiary-container": "#012347",
+            "tertiary-fixed": "#d5e3ff", "surface": "#f8f9ff", "surface-bright": "#f8f9ff",
+            "surface-dim": "#ccdbf3", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff4ff",
+            "surface-container": "#e6eeff", "surface-container-high": "#dce9ff", "surface-container-highest": "#d5e3fc",
+            "on-surface": "#0d1c2e", "on-surface-variant": "#43474c", "outline": "#74777d",
+            "outline-variant": "#c3c7cd", "error": "#ba1a1a"
+          },
+          fontFamily: { sans: ["Plus Jakarta Sans", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen">
+
+  <header
+    class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant/60 shadow-[0_1px_3px_0_rgba(15,37,55,0.05)] transition-all duration-200">
+    <div
+      class="hidden sm:flex bg-primary text-surface-container-lowest px-4 lg:px-12 py-1.5 justify-between items-center text-xs border-b border-primary-container">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-secondary-container font-semibold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          GOVT. REGD. STAR EXPORT HOUSE
+        </span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">Direct Ocean Sailings from Western &amp; Southern Indian Ports</span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">Incoterms 2020 Standard</span>
+      </div>
+      <div class="flex items-center gap-4 text-primary-fixed-dim">
+        <a href="mailto:sarankavin304@gmail.com"
+          class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">mail</span>
+          sarankavin304@gmail.com
+        </a>
+        <span>•</span>
+        <a href="tel:+918248561253"
+          class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">call</span> +91 8248561253
+        </a>
+      </div>
+    </div>
+
+    <div class="h-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+        <img src="assets/cocohub-logo.svg" alt="Cocohub Logo" class="w-11 h-11 rounded-lg shadow-sm object-contain flex-shrink-0"/>
+        <div class="flex flex-col">
+          <span class="font-bold text-xl text-primary leading-tight tracking-tight">Cocohub</span>
+          <span class="text-[11px] font-semibold text-outline uppercase tracking-wider">Govt. Regd. Export House</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-page="home"
+          class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Home</a>
+        <div class="relative group" id="productsNavTrigger">
+          <a href="products.html" data-page="products"
+            class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors inline-flex items-center gap-1">
+            <span>Products</span>
+            <span
+              class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
+          </a>
+          <div id="productsDropdownMenu"
+            class="hidden absolute top-full -left-12 w-[340px] bg-surface-container-lowest border border-outline-variant/70 rounded-xl shadow-xl p-3 z-50">
+            <div class="px-3 py-2 border-b border-outline-variant/40 mb-2"><span
+                class="text-[11px] uppercase font-bold tracking-wider text-outline">6 Certified Export Categories</span>
+            </div>
+            <div class="space-y-1">
+              <a href="products.html?category=coir-peat"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">eco</span>
+                <div><span class="block text-sm font-semibold text-primary">Coir &amp; Coco Peat Products</span><span
+                    class="block text-xs text-on-surface-variant">Blocks, Grow Bags, Fibre, Rope, Mats</span></div>
+              </a>
+              <a href="products.html?category=spices"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">local_fire_department</span>
+                <div><span class="block text-sm font-semibold text-primary">Spices &amp; Masala</span><span
+                    class="block text-xs text-on-surface-variant">Turmeric, Black Pepper, Cardamom, Cloves,
+                    Chilli</span></div>
+              </a>
+              <a href="products.html?category=rice-food"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">rice_bowl</span>
+                <div><span class="block text-sm font-semibold text-primary">Rice &amp; Food Products</span><span
+                    class="block text-xs text-on-surface-variant">Ponni Rice, Idly Rice, Millets, Ready Foods</span>
+                </div>
+              </a>
+              <a href="products.html?category=coconut"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">nutrition</span>
+                <div><span class="block text-sm font-semibold text-primary">Coconut Products</span><span
+                    class="block text-xs text-on-surface-variant">Virgin Oil, Desiccated, Shell Charcoal, Coir</span>
+                </div>
+              </a>
+              <a href="products.html?category=handicrafts"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">palette</span>
+                <div><span class="block text-sm font-semibold text-primary">Handicrafts</span><span
+                    class="block text-xs text-on-surface-variant">Brass, Bronze Castings, Wooden Art, Decor</span></div>
+              </a>
+              <a href="products.html?category=textiles"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">checkroom</span>
+                <div><span class="block text-sm font-semibold text-primary">Textiles &amp; Garments</span><span
+                    class="block text-xs text-on-surface-variant">Cotton Fabrics, T-Shirts, Bedsheets, Towels</span>
+                </div>
+              </a>
+            </div>
+            <div class="mt-2 pt-2 border-t border-outline-variant/40 px-2 flex justify-between items-center text-xs">
+              <a href="products.html" class="text-secondary font-bold hover:underline">View All 28 Products →</a>
+              <span class="text-outline">JNPT / Cochin / Chennai</span>
+            </div>
+          </div>
+        </div>
+        <a href="quality.html" data-page="quality"
+          class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Quality &amp;
+          Certifications</a>
+        <a href="logistics.html" data-page="logistics"
+          class="text-sm font-bold text-primary border-b-2 border-secondary-container py-1.5 transition-colors">Logistics</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+918248561253"
+          class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-outline-variant bg-surface hover:bg-surface-container-low transition-colors">
+          <span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+          <div class="text-left">
+            <span class="block text-[10px] uppercase font-bold text-outline leading-none">Trade Desk</span>
+            <span class="font-bold text-xs text-primary leading-tight">+91 8248561253</span>
+          </div>
+        </a>
+        <a href="rfq.html"
+          class="inline-flex items-center justify-center px-5 py-2.5 bg-secondary-container hover:bg-secondary text-surface-container-lowest font-semibold text-sm rounded-lg transition-all shadow-sm hover:shadow-md">
+          Request a Quote <span class="material-symbols-outlined ml-1.5 text-[18px]">arrow_forward</span>
+        </a>
+        <button id="mobileMenuToggle"
+          class="lg:hidden p-2 rounded-lg text-primary hover:bg-surface-container-low transition-colors"
+          aria-label="Toggle menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu"
+      class="hidden lg:hidden bg-surface-container-lowest border-b border-outline-variant px-4 py-4 space-y-3">
+      <a href="index.html" class="block font-semibold text-primary py-2 border-b border-outline-variant/40">Home</a>
+      <div>
+        <div class="flex items-center justify-between font-semibold text-on-surface-variant py-2">
+          <span>Products (6 Categories)</span><a href="products.html" class="text-xs text-secondary font-bold">Catalog
+            →</a>
+        </div>
+        <div class="pl-3 space-y-2 text-sm border-l-2 border-secondary-container/40 my-1">
+          <a href="products.html?category=coir-peat" class="block text-on-surface hover:text-primary">Coir &amp; Coco
+            Peat Products</a>
+          <a href="products.html?category=spices" class="block text-on-surface hover:text-primary">Spices &amp;
+            Masala</a>
+          <a href="products.html?category=rice-food" class="block text-on-surface hover:text-primary">Rice &amp; Food
+            Products</a>
+          <a href="products.html?category=coconut" class="block text-on-surface hover:text-primary">Coconut Products</a>
+          <a href="products.html?category=handicrafts" class="block text-on-surface hover:text-primary">Handicrafts</a>
+          <a href="products.html?category=textiles" class="block text-on-surface hover:text-primary">Textiles &amp;
+            Garments</a>
+        </div>
+      </div>
+      <a href="quality.html"
+        class="block font-medium text-on-surface-variant py-2 border-b border-outline-variant/40">Quality &amp;
+        Certifications</a>
+      <a href="logistics.html"
+        class="block font-semibold text-primary py-2 border-b border-outline-variant/40">Logistics &amp; Port
+        Dispatch</a>
+      <a href="rfq.html"
+        class="block text-center font-bold text-surface-container-lowest bg-secondary-container hover:bg-secondary py-2.5 rounded-lg mt-2">Request
+        an Export Quote</a>
+    </div>
+  </header>
+
+  <main class="w-full pt-28 sm:pt-32 flex-grow">
+    <section class="w-full bg-surface-container-lowest border-b border-outline-variant/50 py-12 lg:py-16">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 text-center max-w-3xl">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-4 shadow-sm">
+          <span class="material-symbols-outlined text-[16px] text-secondary">directions_boat</span>
+          <span class="text-xs uppercase tracking-wider font-bold">CROSS-BORDER MARITIME EXPORT LOGISTICS</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary tracking-tight leading-tight mb-4">
+          Global Logistics, Ports &amp; Freight Corridors
+        </h1>
+        <p class="text-base text-on-surface-variant leading-relaxed">
+          Operating out of India’s premier deep-water container terminals: Nhava Sheva (JNPT) Mumbai, Mundra, Chennai,
+          Cochin, and Tuticorin. Direct weekly liner connections to Middle East, Europe, North America, and
+          Asia-Pacific.
+        </p>
+      </div>
+    </section>
+
+    <!-- LIVE CONSIGNMENT TRACKING SIMULATOR -->
+    <section class="w-full py-12 px-4 sm:px-6 lg:px-12 bg-surface">
+      <div class="max-w-[1440px] mx-auto">
+        <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/70 p-6 sm:p-10 shadow-lg">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-outline-variant/40 pb-6 mb-6">
+            <div>
+              <span class="text-xs font-bold text-secondary uppercase tracking-wider block mb-1">REAL-TIME CONSIGNMENT
+                STATUS</span>
+              <h2 class="text-xl sm:text-2xl font-bold text-primary">Track Export Cargo (B/L or Container No.)</h2>
+              <p class="text-xs text-outline mt-1">
+                Try sample references:
+                <button class="font-bold text-secondary underline sample-bl-btn"
+                  data-bl="BEX-JNPT-9182">BEX-JNPT-9182</button> •
+                <button class="font-bold text-secondary underline sample-bl-btn"
+                  data-bl="BEX-COCHIN-4421">BEX-COCHIN-4421</button> •
+                <button class="font-bold text-secondary underline sample-bl-btn"
+                  data-bl="BEX-TUT-7712">BEX-TUT-7712</button> •
+                <button class="font-bold text-secondary underline sample-bl-btn"
+                  data-bl="BEX-MAA-3304">BEX-MAA-3304</button>
+              </p>
+            </div>
+            <div class="flex items-center gap-2 w-full lg:w-[420px]">
+              <div class="relative flex-grow">
+                <span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+                <input id="trackingInput" type="text" value="BEX-JNPT-9182" placeholder="Enter B/L Number..."
+                  class="w-full pl-10 pr-3 py-2.5 bg-surface border border-outline-variant rounded-lg text-sm text-primary font-bold focus:outline-none focus:ring-2 focus:ring-primary" />
+              </div>
+              <button id="trackBtn"
+                class="px-5 py-2.5 bg-primary hover:bg-primary-container text-surface-container-lowest font-bold text-xs rounded-lg transition-colors flex items-center gap-1">
+                <span>Track</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="trackingResultBox" class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/60">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-outline-variant/40">
+              <div><span class="text-xs text-outline font-semibold block">Bill of Lading:</span><span id="resBL"
+                  class="text-lg font-bold text-primary">BEX-JNPT-9182</span></div>
+              <div><span class="text-xs text-outline font-semibold block">Cargo &amp; Vessel:</span><span id="resVessel"
+                  class="text-sm font-bold text-primary">MSC DILETTA / V.2409W (Ponni Rice 4x20ft)</span></div>
+              <div><span class="text-xs text-outline font-semibold block">Port of Loading:</span><span id="resPol"
+                  class="text-sm font-bold text-primary">Nhava Sheva (JNPT), India</span></div>
+              <div><span class="text-xs text-outline font-semibold block">Destination Port:</span><span id="resPod"
+                  class="text-sm font-bold text-secondary">Rotterdam, Netherlands</span></div>
+            </div>
+            <div id="trackingStepperGrid" class="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRATEGIC PORTS -->
+    <section class="w-full py-16 px-4 sm:px-6 lg:px-12 bg-surface-container-low border-t border-outline-variant/40">
+      <div class="max-w-[1440px] mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-secondary">SEAPORT HUBS</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-primary mt-1">Our Strategic Export Seaports in India</h2>
+          <p class="text-sm text-on-surface-variant mt-2">Dispatches routed through specialized maritime gateways to
+            minimize transit times and inland hauling:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm">
+            <div class="flex items-center justify-between mb-3"><span
+                class="text-xs font-bold text-secondary uppercase">Western Corridor</span><span
+                class="text-xs bg-surface-container px-2 py-0.5 rounded font-bold text-primary">Port Code: INNSA</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-1">Nhava Sheva (JNPT) — Mumbai</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed mb-4">India’s largest container hub handling
+              agricultural commodities, rice, handicrafts, and processed foods with direct sailings to Europe,
+              Mediterranean, and North America.</p>
+            <div class="text-[11px] space-y-1 text-outline border-t border-outline-variant/30 pt-3">
+              <div><strong>Primary Exports:</strong> Rice, Spices, Guntur Chillies, Handicrafts</div>
+              <div><strong>Turnaround:</strong> 24-48 Hours Container Gate-In</div>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm">
+            <div class="flex items-center justify-between mb-3"><span
+                class="text-xs font-bold text-secondary uppercase">North-West Seaboard</span><span
+                class="text-xs bg-surface-container px-2 py-0.5 rounded font-bold text-primary">Port Code: INMUN</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-1">Mundra Port — Gujarat</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed mb-4">Ultra-modern deep-water container port
+              capable of handling ultra-large container vessels (ULCV). Shortest sailing transit time to Gulf ports
+              (Jebel Ali / Dammam).</p>
+            <div class="text-[11px] space-y-1 text-outline border-t border-outline-variant/30 pt-3">
+              <div><strong>Primary Exports:</strong> Agri Commodities, Spices, Brass Items</div>
+              <div><strong>Sailing Time:</strong> 3-4 Days to Middle East Hubs</div>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm">
+            <div class="flex items-center justify-between mb-3"><span
+                class="text-xs font-bold text-secondary uppercase">Eastern Gateway</span><span
+                class="text-xs bg-surface-container px-2 py-0.5 rounded font-bold text-primary">Port Code: INMAA</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-1">Chennai Port &amp; Kattupalli</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed mb-4">Primary dispatch terminal for Thanjavur
+              Ponni rice, traditional rices, millets, organic cotton fabrics, and Tirupur textiles to Southeast Asia and
+              Australia.</p>
+            <div class="text-[11px] space-y-1 text-outline border-t border-outline-variant/30 pt-3">
+              <div><strong>Primary Exports:</strong> Ponni Rice, Textiles, Garments, Bronze Items</div>
+              <div><strong>Direct Links:</strong> Singapore, Port Klang, Melbourne</div>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm">
+            <div class="flex items-center justify-between mb-3"><span
+                class="text-xs font-bold text-secondary uppercase">South-West Malabar</span><span
+                class="text-xs bg-surface-container px-2 py-0.5 rounded font-bold text-primary">Port Code: INCOK</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-1">Cochin Port (ICTT Vallarpadam)</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed mb-4">Gateway adjacent to international east-west
+              sea lanes for Tellicherry black pepper, Alleppey green cardamom, cold-pressed virgin coconut oil, and coir
+              mats.</p>
+            <div class="text-[11px] space-y-1 text-outline border-t border-outline-variant/30 pt-3">
+              <div><strong>Primary Exports:</strong> Black Pepper, Cardamom, Coconut Oil, Coir Mats</div>
+              <div><strong>Feeder Transit:</strong> Colombo Transshipment in 24h</div>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm">
+            <div class="flex items-center justify-between mb-3"><span
+                class="text-xs font-bold text-secondary uppercase">Southern Coromandel</span><span
+                class="text-xs bg-surface-container px-2 py-0.5 rounded font-bold text-primary">Port Code: INTUT</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-1">Tuticorin (V.O.C Port)</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed mb-4">World’s leading export harbor for compressed
+              coco peat blocks, grow bags, coir fibre bales, and coconut shell products from Pollachi-Tenkasi clusters.
+            </p>
+            <div class="text-[11px] space-y-1 text-outline border-t border-outline-variant/30 pt-3">
+              <div><strong>Primary Exports:</strong> Coco Peat 5kg Blocks, Grow Bags, Coir Twine</div>
+              <div><strong>Volume:</strong> Over 1,200 Containers Handled Monthly</div>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm">
+            <div class="flex items-center justify-between mb-3"><span
+                class="text-xs font-bold text-secondary uppercase">Express Air Freight</span><span
+                class="text-xs bg-surface-container px-2 py-0.5 rounded font-bold text-primary">BOM / MAA / COK /
+                BLR</span></div>
+            <h3 class="text-lg font-bold text-primary mb-1">Air Cargo Priority Hubs</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed mb-4">Temperature-controlled dispatch for green
+              cardamom jumbo pods, Swamimalai bronze masterpieces, and emergency retail sample shipments.</p>
+            <div class="text-[11px] space-y-1 text-outline border-t border-outline-variant/30 pt-3">
+              <div><strong>Turnaround:</strong> 24-48 Hour Global Delivery</div>
+              <div><strong>SLA:</strong> Priority Customs Clearance Under EDI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTAINER STUFFING & LOADABILITY SPECIFICATIONS -->
+    <section class="w-full py-16 px-4 sm:px-6 lg:px-12 bg-surface">
+      <div class="max-w-[1440px] mx-auto space-y-16">
+        <div>
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-secondary">CONTAINER LOADABILITY</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-primary mt-1">20ft FCL &amp; 40ft High Cube Stuffing
+              Standards</h2>
+            <p class="text-sm text-on-surface-variant mt-2">Standard container payloads with moisture-absorbing
+              desiccant poles and ISPM-15 fumigated dunnage:</p>
+          </div>
+          <div
+            class="bg-surface-container-lowest rounded-2xl border border-outline-variant/70 p-6 sm:p-8 shadow-sm overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-surface-container text-primary uppercase font-bold border-b border-outline-variant/60">
+                <tr>
+                  <th class="p-3">Commodity Category</th>
+                  <th class="p-3">20ft Standard FCL</th>
+                  <th class="p-3">40ft High Cube (HC)</th>
+                  <th class="p-3">Palletization &amp; Protection</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-outline-variant/30">
+                <tr>
+                  <td class="p-3 font-bold text-primary">Coco Peat 5kg Blocks</td>
+                  <td class="p-3">10–12 MT (2,000–2,400 blocks)</td>
+                  <td class="p-3 font-bold text-secondary">24–26 MT (4,800–5,200 blocks)</td>
+                  <td class="p-3">20 ISPM-15 pallets (240 blocks/pallet) or floor-loaded</td>
+                </tr>
+                <tr class="bg-surface-container-low/50">
+                  <td class="p-3 font-bold text-primary">Ponni / Idly Rice (25kg/50kg)</td>
+                  <td class="p-3 font-bold text-secondary">25 MT (Heavy Cargo Limit)</td>
+                  <td class="p-3">26–27 MT (Weight Restricted)</td>
+                  <td class="p-3">Food-grade Kraft/PP bags + container desiccant strips</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-primary">Whole &amp; Ground Spices</td>
+                  <td class="p-3 font-bold text-secondary">14–18 MT</td>
+                  <td class="p-3">24–26 MT</td>
+                  <td class="p-3">Vacuum cartons / poly-lined Kraft sacks + moisture barrier</td>
+                </tr>
+                <tr class="bg-surface-container-low/50">
+                  <td class="p-3 font-bold text-primary">Virgin Coconut Oil</td>
+                  <td class="p-3 font-bold text-secondary">21,000L Flexitank / 18 IBC Totes</td>
+                  <td class="p-3">N/A (20ft standard for liquid bulk)</td>
+                  <td class="p-3">Food-grade Flexibag with bulkhead &amp; heating pad option</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-primary">Textiles, Towels &amp; Apparel</td>
+                  <td class="p-3">8–10 MT (Cartons / Bales)</td>
+                  <td class="p-3 font-bold text-secondary">18–22 MT (Volume Optimized)</td>
+                  <td class="p-3">5-ply master cartons with waterproof PE inner poly liners</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- INCOTERMS 2020 MATRIX -->
+        <div>
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-secondary">TRADE STANDARDS</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-primary mt-1">Incoterms 2020 Compliance Matrix</h2>
+            <p class="text-sm text-on-surface-variant mt-2">Clear allocation of freight, customs, and risk between
+              Cocohub and the international buyer:</p>
+          </div>
+          <div
+            class="bg-surface-container-lowest rounded-2xl border border-outline-variant/70 p-6 sm:p-8 shadow-sm overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-surface-container text-primary uppercase font-bold border-b border-outline-variant/60">
+                <tr>
+                  <th class="p-3">Incoterm</th>
+                  <th class="p-3">Factory Loading</th>
+                  <th class="p-3">Export Customs (India)</th>
+                  <th class="p-3">Ocean Freight</th>
+                  <th class="p-3">Marine Insurance</th>
+                  <th class="p-3">Import Customs</th>
+                  <th class="p-3">Recommended For</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-outline-variant/30">
+                <tr>
+                  <td class="p-3 font-bold text-primary">EXW (Ex Works)</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-on-surface">Buyers with Indian freight forwarders</td>
+                </tr>
+                <tr class="bg-surface-container-low/50">
+                  <td class="p-3 font-bold text-primary">FOB (Free on Board)</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-on-surface">Importers with preferred carrier contracts</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-secondary">CIF (Cost, Insurance &amp; Freight)</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub (ICC A)</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 font-bold text-secondary">Standard institutional procurement</td>
+                </tr>
+                <tr class="bg-surface-container-low/50">
+                  <td class="p-3 font-bold text-primary">CFR (Cost &amp; Freight)</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-outline">Buyer Arranges</td>
+                  <td class="p-3 text-on-surface">Buyers holding open marine cover</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-primary">DDP (Delivered Duty Paid)</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-emerald-600 font-bold">Cocohub</td>
+                  <td class="p-3 text-on-surface">Select markets (USA, UAE, UK, SG)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full bg-primary-container text-surface border-t border-primary/20 mt-auto">
+    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 pt-14 pb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <img src="assets/cocohub-logo.svg" alt="Cocohub Logo" class="w-9 h-9 rounded object-contain flex-shrink-0"/>
+            <span class="text-xl font-bold text-surface-container-lowest tracking-tight">Cocohub</span>
+            <span
+              class="px-2 py-0.5 rounded bg-surface-container-lowest/15 text-surface-container-high text-[10px] font-bold uppercase tracking-wider">STAR
+              EXPORTER</span>
+          </div>
+          <p class="text-sm text-primary-fixed mb-4 leading-relaxed">Government of India registered Star Export House
+            facilitating verified B2B trade worldwide under standardized Incoterms 2020.</p>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span
+              class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">DGFT
+              IEC: 0389021488</span>
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">MSME Udyam Verified</span>
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">Est. 2026 • Founders: Saran R &amp; Nivendhan S</span>
+          </div>
+        </div>
+        <div>
+          <h3
+            class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Quick Navigation</h3>
+          <ul class="space-y-2 text-sm text-primary-fixed">
+            <li><a href="index.html" class="hover:text-surface-container-lowest transition-colors">Home Page</a></li>
+            <li><a href="products.html" class="hover:text-surface-container-lowest transition-colors">Products Catalog
+                (28 Items)</a></li>
+            <li><a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Quality &amp;
+                Certifications</a></li>
+            <li><a href="logistics.html"
+                class="hover:text-surface-container-lowest transition-colors font-bold text-secondary-fixed">Logistics
+                &amp; Port Dispatch</a></li>
+            <li><a href="rfq.html" class="hover:text-surface-container-lowest transition-colors">Request a Quote /
+                Proforma</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3
+            class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            India Export Trade Office</h3>
+          <p class="text-sm text-primary-fixed leading-relaxed mb-4" data-site="address">Cocohub Towers, Suite
+            402-405,<br />Jawaharlal Nehru Port Trust (JNPT) Maritime Hub,<br />Navi Mumbai, Maharashtra 400707, India
+          </p>
+          <div class="space-y-2 text-xs text-primary-fixed">
+            <div class="flex items-center gap-2"><span
+                class="material-symbols-outlined text-secondary-container text-[18px]">call</span><span>+91 8248561253
+                / +91 8248561253</span></div>
+            <div class="flex items-center gap-2"><span
+                class="material-symbols-outlined text-secondary-container text-[18px]">mail</span><a
+                href="mailto:sarankavin304@gmail.com" class="hover:underline">sarankavin304@gmail.com</a></div>
+            <div class="flex items-center gap-2"><span
+                class="material-symbols-outlined text-secondary-container text-[18px]">chat</span><span>WhatsApp Trade
+                Desk: 24/7 Priority Support</span></div>
+          </div>
+        </div>
+        <div>
+          <h3
+            class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Accreditations &amp; Trade Badges</h3>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">IEC DGFT</span><span
+                class="text-[10px] text-primary-fixed-dim">Export Registered</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">APEDA</span><span
+                class="text-[10px] text-primary-fixed-dim">Agri Certified</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">Spices Board</span><span
+                class="text-[10px] text-primary-fixed-dim">CRES Audited</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">Coir Board</span><span
+                class="text-[10px] text-primary-fixed-dim">Substrate Certified</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">ISO 9001</span><span
+                class="text-[10px] text-primary-fixed-dim">Quality Management</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">FSSAI</span><span
+                class="text-[10px] text-primary-fixed-dim">Food Safety Central</span></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-outline/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-fixed-dim">
+        <p>© 2026 Cocohub Global Trade Private Limited. All international rights reserved.</p>
+        <p>Incoterms 2020 Standard: FOB, CIF, CFR, DDP.</p>
+        <div class="flex items-center gap-4">
+          <a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Export Compliance</a>
+          <a href="logistics.html" class="hover:text-surface-container-lowest transition-colors">Incoterms Terms</a>
+          <a href="rfq.html" class="hover:text-surface-container-lowest transition-colors">RFQ Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="export-data.js"></script>
+  <script src="shared-nav.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const trackBtn = document.getElementById('trackBtn');
+      const trackingInput = document.getElementById('trackingInput');
+      const stepperGrid = document.getElementById('trackingStepperGrid');
+
+      const mockData = {
+        'BEX-JNPT-9182': {
+          bl: 'BEX-JNPT-9182',
+          vessel: 'MSC DILETTA / V.2409W (Ponni Rice 4x20ft)',
+          pol: 'Nhava Sheva (JNPT), India',
+          pod: 'Rotterdam, Netherlands',
+          stage: 3,
+          eta: 'ETA: 6 Days Remaining'
+        },
+        'BEX-COCHIN-4421': {
+          bl: 'BEX-COCHIN-4421',
+          vessel: 'CMA CGM TITAN / V.0881S (Black Pepper & Cardamom)',
+          pol: 'Cochin Port (INCOK), India',
+          pod: 'Jebel Ali (DXB), UAE',
+          stage: 4,
+          eta: 'Arrived • Customs Cleared at POD'
+        },
+        'BEX-TUT-7712': {
+          bl: 'BEX-TUT-7712',
+          vessel: 'MAERSK SEOUL / V.1120E (Coco Peat 5kg Blocks 2x40HC)',
+          pol: 'Tuticorin Port (INTUT), India',
+          pod: 'Valencia, Spain',
+          stage: 2,
+          eta: 'Vessel Loading Scheduled Tonight'
+        },
+        'BEX-MAA-3304': {
+          bl: 'BEX-MAA-3304',
+          vessel: 'HAPAG EXPRESS / V.4021E (Combed Cotton & Bedsheets)',
+          pol: 'Chennai Port (INMAA), India',
+          pod: 'Felixstowe, United Kingdom',
+          stage: 3,
+          eta: 'ETA: 11 Days Remaining'
+        }
+      };
+
+      const stepLabels = [
+        { title: 'Factory Stuffing & Port Gate-In', sub: 'ISPM-15 & Seal Verified' },
+        { title: 'Customs Cleared & Stamped', sub: 'LEO Released • Phyto Stamped' },
+        { title: 'High-Seas Ocean Transit', sub: '' },
+        { title: 'Port of Discharge Clearance', sub: 'Final Terminal Delivery' }
+      ];
+
+      function updateTracking(bl) {
+        const key = bl.trim().toUpperCase();
+        const item = mockData[key] || {
+          bl: key,
+          vessel: 'MAERSK KALAM / V.1042E',
+          pol: 'Chennai Port (INMAA), India',
+          pod: 'Singapore Port (SGSIN)',
+          stage: 3,
+          eta: 'ETA: 4 Days Remaining'
+        };
+
+        document.getElementById('resBL').textContent = item.bl;
+        document.getElementById('resVessel').textContent = item.vessel;
+        document.getElementById('resPol').textContent = item.pol;
+        document.getElementById('resPod').textContent = item.pod;
+
+        stepperGrid.innerHTML = stepLabels.map((s, idx) => {
+          const stepNum = idx + 1;
+          const isDone = stepNum < item.stage || (item.stage === 4 && stepNum === 4);
+          const isCurrent = stepNum === item.stage && item.stage < 4;
+          const subText = (stepNum === 3 || stepNum === 4) && (isCurrent || (item.stage === 4 && stepNum === 4)) ? item.eta : s.sub;
+
+          if (isDone) {
+            return `
+              <div class="bg-surface-container-lowest p-4 rounded-xl border border-emerald-500 shadow-sm flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[18px]">check</span></div>
+                <div><span class="block text-xs font-bold text-emerald-700 uppercase">Step ${stepNum} • Completed</span><h4 class="text-xs font-bold text-primary">${s.title}</h4><span class="text-[10px] text-outline">${subText}</span></div>
+              </div>`;
+          }
+          if (isCurrent) {
+            return `
+              <div class="bg-surface-container-lowest p-4 rounded-xl border border-secondary-container shadow-sm flex items-start gap-3 animate-pulse">
+                <div class="w-8 h-8 rounded-full bg-secondary-container text-white flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[18px]">directions_boat</span></div>
+                <div><span class="block text-xs font-bold text-secondary uppercase">Step ${stepNum} • Active</span><h4 class="text-xs font-bold text-primary">${s.title}</h4><span class="text-[10px] text-secondary font-bold">${subText}</span></div>
+              </div>`;
+          }
+          return `
+            <div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/60 shadow-sm flex items-start gap-3 opacity-60">
+              <div class="w-8 h-8 rounded-full bg-surface-container text-outline flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[18px]">anchor</span></div>
+              <div><span class="block text-xs font-bold text-outline uppercase">Step ${stepNum} • Pending</span><h4 class="text-xs font-bold text-primary">${s.title}</h4><span class="text-[10px] text-outline">${s.sub}</span></div>
+            </div>`;
+        }).join('');
+      }
+
+      trackBtn.addEventListener('click', () => {
+        if (trackingInput.value.trim()) updateTracking(trackingInput.value);
+      });
+      trackingInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && trackingInput.value.trim()) updateTracking(trackingInput.value);
+      });
+      document.querySelectorAll('.sample-bl-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const bl = btn.getAttribute('data-bl');
+          trackingInput.value = bl;
+          updateTracking(bl);
+        });
+      });
+
+      updateTracking('BEX-JNPT-9182');
+    });
+  </script>
+</body>
+
+</html>
+```
+
+---

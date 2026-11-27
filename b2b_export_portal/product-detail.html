@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Product Specification &amp; Export Grade Details | Cocohub</title>
+  <meta name="description"
+    content="Technical export specifications, container loadability, lab assays, and FOB/CIF proforma quotation for Indian commodities." />
+  <meta property="og:title" content="Export Product Technical Specification | Cocohub" />
+  <meta property="og:type" content="product" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    @media print {
+
+      header,
+      footer,
+      aside,
+      .no-print {
+        display: none !important;
+      }
+
+      main {
+        padding-top: 0 !important;
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#000f1d", "primary-container": "#0f2537", "on-primary": "#ffffff",
+            "on-primary-container": "#788da3", "primary-fixed": "#cfe5fd", "primary-fixed-dim": "#b3c9e0",
+            "on-primary-fixed": "#061d2f", "secondary": "#904d00", "secondary-container": "#fe932c",
+            "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-secondary": "#ffffff",
+            "on-secondary-container": "#663500", "tertiary": "#000d22", "tertiary-container": "#012347",
+            "tertiary-fixed": "#d5e3ff", "surface": "#f8f9ff", "surface-bright": "#f8f9ff",
+            "surface-dim": "#ccdbf3", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff4ff",
+            "surface-container": "#e6eeff", "surface-container-high": "#dce9ff", "surface-container-highest": "#d5e3fc",
+            "on-surface": "#0d1c2e", "on-surface-variant": "#43474c", "outline": "#74777d",
+            "outline-variant": "#c3c7cd", "error": "#ba1a1a"
+          },
+          fontFamily: { sans: ["Plus Jakarta Sans", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen">
+
+  <header
+    class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant/60 shadow-[0_1px_3px_0_rgba(15,37,55,0.05)] transition-all duration-200">
+    <div
+      class="hidden sm:flex bg-primary text-surface-container-lowest px-4 lg:px-12 py-1.5 justify-between items-center text-xs border-b border-primary-container">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-secondary-container font-semibold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          GOVT. REGD. STAR EXPORT HOUSE
+        </span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">Technical Laboratory Assayed Consignments</span>
+        <span class="text-primary-fixed-dim/40">•</span>
+        <span class="text-primary-fixed">Incoterms 2020 Compliant</span>
+      </div>
+      <div class="flex items-center gap-4 text-primary-fixed-dim">
+        <a href="mailto:sarankavin304@gmail.com"
+          class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">mail</span>
+          sarankavin304@gmail.com
+        </a>
+        <span>•</span>
+        <a href="tel:+918248561253"
+          class="hover:text-surface-container-lowest transition-colors flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px] text-secondary-container">call</span> +91 8248561253
+        </a>
+      </div>
+    </div>
+
+    <div class="h-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+        <img src="assets/cocohub-logo.svg" alt="Cocohub Logo" class="w-11 h-11 rounded-lg shadow-sm object-contain flex-shrink-0"/>
+        <div class="flex flex-col">
+          <span class="font-bold text-xl text-primary leading-tight tracking-tight">Cocohub</span>
+          <span class="text-[11px] font-semibold text-outline uppercase tracking-wider">Govt. Regd. Export House</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-page="home"
+          class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Home</a>
+        <div class="relative group" id="productsNavTrigger">
+          <a href="products.html" data-page="products"
+            class="text-sm font-bold text-primary border-b-2 border-secondary-container py-1.5 transition-colors inline-flex items-center gap-1">
+            <span>Products</span>
+            <span
+              class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
+          </a>
+          <div id="productsDropdownMenu"
+            class="hidden absolute top-full -left-12 w-[340px] bg-surface-container-lowest border border-outline-variant/70 rounded-xl shadow-xl p-3 z-50">
+            <div class="px-3 py-2 border-b border-outline-variant/40 mb-2">
+              <span class="text-[11px] uppercase font-bold tracking-wider text-outline">6 Certified Export
+                Categories</span>
+            </div>
+            <div class="space-y-1">
+              <a href="products.html?category=coir-peat"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">eco</span>
+                <div><span class="block text-sm font-semibold text-primary">Coir &amp; Coco Peat Products</span><span
+                    class="block text-xs text-on-surface-variant">Blocks, Grow Bags, Fibre, Rope, Mats</span></div>
+              </a>
+              <a href="products.html?category=spices"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">local_fire_department</span>
+                <div><span class="block text-sm font-semibold text-primary">Spices &amp; Masala</span><span
+                    class="block text-xs text-on-surface-variant">Turmeric, Black Pepper, Cardamom, Cloves,
+                    Chilli</span></div>
+              </a>
+              <a href="products.html?category=rice-food"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">rice_bowl</span>
+                <div><span class="block text-sm font-semibold text-primary">Rice &amp; Food Products</span><span
+                    class="block text-xs text-on-surface-variant">Ponni Rice, Idly Rice, Millets, Ready Foods</span>
+                </div>
+              </a>
+              <a href="products.html?category=coconut"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">nutrition</span>
+                <div><span class="block text-sm font-semibold text-primary">Coconut Products</span><span
+                    class="block text-xs text-on-surface-variant">Virgin Oil, Desiccated, Shell Charcoal, Coir</span>
+                </div>
+              </a>
+              <a href="products.html?category=handicrafts"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">palette</span>
+                <div><span class="block text-sm font-semibold text-primary">Handicrafts</span><span
+                    class="block text-xs text-on-surface-variant">Brass, Bronze Castings, Wooden Art, Decor</span></div>
+              </a>
+              <a href="products.html?category=textiles"
+                class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors group/item"><span
+                  class="material-symbols-outlined text-secondary text-[22px]">checkroom</span>
+                <div><span class="block text-sm font-semibold text-primary">Textiles &amp; Garments</span><span
+                    class="block text-xs text-on-surface-variant">Cotton Fabrics, T-Shirts, Bedsheets, Towels</span>
+                </div>
+              </a>
+            </div>
+            <div class="mt-2 pt-2 border-t border-outline-variant/40 px-2 flex justify-between items-center text-xs">
+              <a href="products.html" class="text-secondary font-bold hover:underline">View All 28 Products →</a>
+              <span class="text-outline">Tuticorin / Chennai / Cochin</span>
+            </div>
+          </div>
+        </div>
+        <a href="quality.html" data-page="quality"
+          class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Quality &amp;
+          Certifications</a>
+        <a href="logistics.html" data-page="logistics"
+          class="text-sm font-medium text-on-surface-variant hover:text-primary py-1.5 transition-colors">Logistics</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+918248561253"
+          class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-outline-variant bg-surface hover:bg-surface-container-low transition-colors">
+          <span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+          <div class="text-left">
+            <span class="block text-[10px] uppercase font-bold text-outline leading-none">Trade Desk</span>
+            <span class="font-bold text-xs text-primary leading-tight">+91 8248561253</span>
+          </div>
+        </a>
+        <a href="rfq.html"
+          class="inline-flex items-center justify-center px-5 py-2.5 bg-secondary-container hover:bg-secondary text-surface-container-lowest font-semibold text-sm rounded-lg transition-all shadow-sm hover:shadow-md">
+          Request a Quote <span class="material-symbols-outlined ml-1.5 text-[18px]">arrow_forward</span>
+        </a>
+        <button id="mobileMenuToggle"
+          class="lg:hidden p-2 rounded-lg text-primary hover:bg-surface-container-low transition-colors"
+          aria-label="Toggle menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu"
+      class="hidden lg:hidden bg-surface-container-lowest border-b border-outline-variant px-4 py-4 space-y-3">
+      <a href="index.html" class="block font-semibold text-primary py-2 border-b border-outline-variant/40">Home</a>
+      <div>
+        <div class="flex items-center justify-between font-semibold text-on-surface-variant py-2">
+          <span>Products (6 Categories)</span><a href="products.html" class="text-xs text-secondary font-bold">Catalog
+            →</a>
+        </div>
+        <div class="pl-3 space-y-2 text-sm border-l-2 border-secondary-container/40 my-1">
+          <a href="products.html?category=coir-peat" class="block text-on-surface hover:text-primary">Coir &amp; Coco
+            Peat Products</a>
+          <a href="products.html?category=spices" class="block text-on-surface hover:text-primary">Spices &amp;
+            Masala</a>
+          <a href="products.html?category=rice-food" class="block text-on-surface hover:text-primary">Rice &amp; Food
+            Products</a>
+          <a href="products.html?category=coconut" class="block text-on-surface hover:text-primary">Coconut Products</a>
+          <a href="products.html?category=handicrafts" class="block text-on-surface hover:text-primary">Handicrafts</a>
+          <a href="products.html?category=textiles" class="block text-on-surface hover:text-primary">Textiles &amp;
+            Garments</a>
+        </div>
+      </div>
+      <a href="quality.html"
+        class="block font-medium text-on-surface-variant py-2 border-b border-outline-variant/40">Quality &amp;
+        Certifications</a>
+      <a href="logistics.html"
+        class="block font-medium text-on-surface-variant py-2 border-b border-outline-variant/40">Logistics &amp; Port
+        Dispatch</a>
+      <a href="rfq.html"
+        class="block text-center font-bold text-surface-container-lowest bg-secondary-container hover:bg-secondary py-2.5 rounded-lg mt-2">Request
+        an Export Quote</a>
+    </div>
+  </header>
+
+  <main class="w-full pt-28 sm:pt-32 flex-grow">
+    <div class="w-full bg-surface-container-low border-b border-outline-variant/50 py-3 no-print">
+      <div
+        class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <nav class="flex items-center gap-1.5 text-outline">
+          <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <a href="products.html" class="hover:text-primary transition-colors">Products</a>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <a id="breadcrumbCategoryLink" href="products.html" class="hover:text-primary transition-colors">Category</a>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <span id="breadcrumbProduct" class="font-bold text-primary">Product</span>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <span
+            class="text-xs bg-surface-container-lowest px-2.5 py-1 rounded border border-outline-variant/60 font-semibold text-primary">
+            Ref: <span id="refBatchTag">DGFT-EXP-2026</span>
+          </span>
+          <button onclick="window.print()" class="hover:text-secondary flex items-center gap-1 font-bold">
+            <span class="material-symbols-outlined text-[16px]">print</span>
+            <span>Print Spec Sheet</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 py-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 flex flex-col gap-6">
+          <div
+            class="bg-surface-container-lowest rounded-2xl border border-outline-variant/60 p-4 shadow-sm overflow-hidden relative">
+            <div class="absolute top-6 left-6 z-10 flex flex-col gap-1.5 items-start">
+              <span id="productCategoryBadge"
+                class="px-2.5 py-1 rounded bg-primary text-white text-[11px] font-bold uppercase tracking-wider shadow">Category</span>
+              <span id="productHsBadge"
+                class="px-2.5 py-0.5 rounded bg-secondary-container text-white text-[10px] font-bold shadow">HS
+                Code</span>
+            </div>
+            <div
+              class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-bright flex items-center justify-center relative">
+              <img id="mainImage" src="" alt="Product" class="w-full h-full object-cover transition-all duration-300" />
+            </div>
+            <div
+              class="mt-4 p-3 rounded-lg bg-surface-container-low flex items-center justify-between text-xs text-on-surface-variant">
+              <span class="flex items-center gap-1 font-semibold text-primary">
+                <span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+                Pre-Shipment Inspection Ready
+              </span>
+              <span class="text-outline font-medium">Courier Sample Available</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/60 shadow-sm space-y-3">
+            <h4 class="text-sm font-bold text-primary flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+              Product Certifications &amp; Compliance
+            </h4>
+            <div id="productCertBadges" class="flex flex-wrap gap-2"></div>
+            <div class="pt-2 border-t border-outline-variant/30 text-xs text-on-surface-variant">
+              <strong>Sample Dispatch:</strong> <span id="specSampleDetails">-</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/60 p-6 sm:p-8 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span id="productOrigin" class="text-xs font-bold text-secondary flex items-center gap-1">
+                <span class="material-symbols-outlined text-[16px]">location_on</span> Origin
+              </span>
+              <span class="text-xs font-semibold text-outline">Incoterms 2020: FOB / CIF / EXW</span>
+            </div>
+
+            <h1 id="productTitle" class="text-2xl sm:text-3xl font-bold text-primary mb-3">Product Title</h1>
+            <p id="productDescription" class="text-sm text-on-surface-variant leading-relaxed mb-6">Product description.
+            </p>
+
+            <h3
+              class="text-sm font-bold text-primary uppercase tracking-wider mb-3 flex items-center gap-1.5 border-b border-outline-variant/40 pb-2">
+              <span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
+              Export Technical Specifications &amp; Metadata
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs mb-6">
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/50">
+                <span class="text-outline block text-[11px] font-medium">Export Category:</span>
+                <span id="specCategory" class="font-bold text-primary block mt-0.5">-</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/50">
+                <span class="text-outline block text-[11px] font-medium">Harmonized Tariff (HS Code):</span>
+                <span id="specHs" class="font-bold text-primary block mt-0.5">-</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/50">
+                <span class="text-outline block text-[11px] font-medium">Export Origin:</span>
+                <span id="specOrigin" class="font-bold text-primary block mt-0.5 flex items-center gap-1">-</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/50">
+                <span class="text-outline block text-[11px] font-medium">Minimum Order Quantity (MOQ):</span>
+                <span id="specMoq" class="font-bold text-secondary block mt-0.5">-</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/50">
+                <span class="text-outline block text-[11px] font-medium">Supported Incoterms (2020):</span>
+                <span id="specIncoterms" class="font-bold text-primary block mt-0.5">EXW, FOB, CIF</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/50">
+                <span class="text-outline block text-[11px] font-medium">Dispatch Lead Time:</span>
+                <span id="specLeadTime" class="font-bold text-primary block mt-0.5">-</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface border border-outline-variant/50 sm:col-span-2">
+                <span class="text-outline block text-[11px] font-medium">Primary Quality Grade &amp; Parameters:</span>
+                <span id="specPrimary" class="font-medium text-primary block mt-0.5">-</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/50 mb-6">
+              <span
+                class="block text-xs font-bold text-primary uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-secondary text-[16px]">inventory_2</span>
+                Packaging Options (Export Certified):
+              </span>
+              <ul id="packagingOptionsList" class="space-y-1.5 mb-3"></ul>
+              <div
+                class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-xs text-outline">
+                <span>Direct Dispatch Gateways:</span>
+                <span id="specPorts" class="text-secondary font-bold">Tuticorin / Chennai / Cochin</span>
+              </div>
+            </div>
+
+            <div
+              class="pt-4 border-t border-outline-variant/50 flex flex-col sm:flex-row items-center justify-between gap-4 no-print">
+              <div>
+                <span class="text-xs text-outline block">Ready to initiate export order?</span>
+                <span class="text-sm font-bold text-primary">Receive proforma invoice within 24 hours</span>
+              </div>
+              <div class="flex items-center gap-3 w-full sm:w-auto">
+                <a id="sampleButton" href="rfq.html"
+                  class="flex-1 sm:flex-none px-5 py-2.5 rounded-lg border border-secondary text-secondary hover:bg-secondary-fixed/30 font-bold text-xs sm:text-sm transition-colors text-center flex items-center justify-center gap-1.5">
+                  <span class="material-symbols-outlined text-[18px]">biotech</span>
+                  <span>Request Sample</span>
+                </a>
+                <a id="bulkQuoteButton" href="rfq.html"
+                  class="flex-1 sm:flex-none px-6 py-2.5 bg-secondary-container hover:bg-secondary text-surface-container-lowest font-bold text-xs sm:text-sm rounded-lg transition-all shadow hover:shadow-md text-center flex items-center justify-center gap-2">
+                  <span>Request Bulk Quote</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-14 pt-10 border-t border-outline-variant/40 no-print">
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-secondary">EXPLORE SIMILAR COMMODITIES</span>
+            <h3 class="text-xl font-bold text-primary mt-0.5">Other Products in this Category</h3>
+          </div>
+          <a href="products.html" class="text-xs font-bold text-secondary hover:underline flex items-center gap-1">
+            <span>View All Categories</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+        <div id="relatedProductsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-primary-container text-surface border-t border-primary/20 mt-auto">
+    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 pt-14 pb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <img src="assets/cocohub-logo.svg" alt="Cocohub Logo" class="w-9 h-9 rounded object-contain flex-shrink-0"/>
+            <span class="text-xl font-bold text-surface-container-lowest tracking-tight">Cocohub</span>
+            <span
+              class="px-2 py-0.5 rounded bg-surface-container-lowest/15 text-surface-container-high text-[10px] font-bold uppercase tracking-wider">STAR
+              EXPORTER</span>
+          </div>
+          <p class="text-sm text-primary-fixed mb-4 leading-relaxed">Government of India registered Star Export House
+            facilitating verified B2B trade of Coir &amp; Coco Peat, Spices, Food Grains, Coconut Products, Handicrafts,
+            and Textiles worldwide.</p>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span
+              class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">DGFT
+              IEC: 0389021488</span>
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">MSME Udyam Verified</span>
+            <span class="px-2.5 py-1 rounded bg-tertiary-container text-primary-fixed-dim border border-outline/30 font-semibold">Est. 2026 • Founders: Saran R &amp; Nivendhan S</span>
+          </div>
+        </div>
+        <div>
+          <h3
+            class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Quick Navigation</h3>
+          <ul class="space-y-2 text-sm text-primary-fixed">
+            <li><a href="index.html" class="hover:text-surface-container-lowest transition-colors">Home Page</a></li>
+            <li><a href="products.html" class="hover:text-surface-container-lowest transition-colors">Products Catalog
+                (28 Items)</a></li>
+            <li><a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Quality &amp;
+                Certifications</a></li>
+            <li><a href="logistics.html" class="hover:text-surface-container-lowest transition-colors">Logistics &amp;
+                Port Dispatch</a></li>
+            <li><a href="rfq.html" class="hover:text-surface-container-lowest transition-colors">Request a Quote /
+                Proforma</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3
+            class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            India Export Trade Office</h3>
+          <p class="text-sm text-primary-fixed leading-relaxed mb-4" data-site="address">Cocohub Towers, Suite
+            402-405,<br />Jawaharlal Nehru Port Trust (JNPT) Maritime Hub,<br />Navi Mumbai, Maharashtra 400707, India
+          </p>
+          <div class="space-y-2 text-xs text-primary-fixed">
+            <div class="flex items-center gap-2"><span
+                class="material-symbols-outlined text-secondary-container text-[18px]">call</span><span>+91 8248561253
+                / +91 8248561253</span></div>
+            <div class="flex items-center gap-2"><span
+                class="material-symbols-outlined text-secondary-container text-[18px]">mail</span><a
+                href="mailto:sarankavin304@gmail.com" class="hover:underline">sarankavin304@gmail.com</a></div>
+            <div class="flex items-center gap-2"><span
+                class="material-symbols-outlined text-secondary-container text-[18px]">chat</span><span>WhatsApp Trade
+                Desk: 24/7 Priority Support</span></div>
+          </div>
+        </div>
+        <div>
+          <h3
+            class="text-sm font-bold text-surface-container-lowest uppercase tracking-wider mb-4 border-l-2 border-secondary-container pl-2.5">
+            Accreditations &amp; Trade Badges</h3>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">IEC DGFT</span><span
+                class="text-[10px] text-primary-fixed-dim">Export Registered</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">APEDA</span><span
+                class="text-[10px] text-primary-fixed-dim">Agri Certified</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">Spices Board</span><span
+                class="text-[10px] text-primary-fixed-dim">CRES Audited</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">Coir Board</span><span
+                class="text-[10px] text-primary-fixed-dim">Substrate Certified</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">ISO 9001</span><span
+                class="text-[10px] text-primary-fixed-dim">Quality Management</span></div>
+            <div class="p-2 rounded bg-tertiary-container border border-outline/30 text-center"><span
+                class="block font-bold text-surface-container-lowest">FSSAI</span><span
+                class="text-[10px] text-primary-fixed-dim">Food Safety Central</span></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-outline/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-fixed-dim">
+        <p>© 2026 Cocohub Global Trade Private Limited. All international rights reserved.</p>
+        <p>Incoterms 2020 Standard: FOB, CIF, CFR, DDP.</p>
+        <div class="flex items-center gap-4">
+          <a href="quality.html" class="hover:text-surface-container-lowest transition-colors">Export Compliance</a>
+          <a href="logistics.html" class="hover:text-surface-container-lowest transition-colors">Incoterms Terms</a>
+          <a href="rfq.html" class="hover:text-surface-container-lowest transition-colors">RFQ Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="export-data.js"></script>
+  <script src="shared-nav.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('product') || 'ponni-rice';
+      const product = getProductById(productId) || EXPORT_DATA.products[0];
+      const brandName = (typeof siteConfig !== 'undefined') ? siteConfig.brandName : 'Cocohub';
+
+      document.title = `${product.name} - Export Specifications | ${brandName}`;
+      const catLink = document.getElementById('breadcrumbCategoryLink');
+      catLink.textContent = product.categoryName;
+      catLink.href = `products.html?category=${encodeURIComponent(product.category)}`;
+
+      document.getElementById('breadcrumbProduct').textContent = product.name;
+      document.getElementById('productCategoryBadge').textContent = product.categoryName;
+      document.getElementById('productHsBadge').textContent = `HS ${product.hsCode}`;
+      document.getElementById('refBatchTag').textContent = `BEX-${product.hsCode.replace(/[^0-9]/g, '')}-2026`;
+
+      const mainImg = document.getElementById('mainImage');
+      mainImg.src = product.image;
+      mainImg.alt = product.name;
+      if (typeof getFallbackImageSvg === 'function') {
+        mainImg.onerror = () => { mainImg.onerror = null; mainImg.src = getFallbackImageSvg(product.name); };
+      }
+
+      document.getElementById('productOrigin').innerHTML = `<span class="material-symbols-outlined text-[16px]">location_on</span> Origin: ${escapeHtml(product.origin)}`;
+      document.getElementById('productTitle').textContent = product.name;
+      document.getElementById('productDescription').textContent = product.description;
+
+      document.getElementById('specCategory').textContent = product.categoryName;
+      document.getElementById('specPrimary').textContent = product.specs;
+      document.getElementById('specHs').textContent = product.hsCode;
+      document.getElementById('specOrigin').innerHTML = `<span class="material-symbols-outlined text-secondary text-[14px]">place</span> ${escapeHtml(product.origin)}`;
+      document.getElementById('specMoq').textContent = product.moq;
+      document.getElementById('specIncoterms').textContent = product.incoterms || 'EXW, FOB, CIF';
+      document.getElementById('specLeadTime').textContent = product.leadTime || '7-14 Days';
+      document.getElementById('specPorts').textContent = product.ports || 'Tuticorin / Chennai / Cochin';
+      document.getElementById('specSampleDetails').textContent = product.sampleAvailable || 'Courier sample available with NABL COA.';
+
+      document.getElementById('productCertBadges').innerHTML = (product.certifications || []).map(cert => `
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant/60 text-xs font-bold text-primary">
+          <span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+          ${escapeHtml(cert)}
+        </span>
+      `).join('');
+
+      const pkgList = document.getElementById('packagingOptionsList');
+      const packaging = (product.packagingOptions && product.packagingOptions.length > 0) ? product.packagingOptions : [product.packaging];
+      pkgList.innerHTML = packaging.map(opt => `
+        <li class="flex items-start gap-2 text-xs text-on-surface">
+          <span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0 mt-0.5">check_circle</span>
+          <span>${escapeHtml(opt)}</span>
+        </li>
+      `).join('');
+
+      document.getElementById('sampleButton').href = `rfq.html?product=${encodeURIComponent(product.id)}&category=${encodeURIComponent(product.category)}&type=sample`;
+      document.getElementById('bulkQuoteButton').href = `rfq.html?product=${encodeURIComponent(product.id)}&category=${encodeURIComponent(product.category)}&type=bulk`;
+
+      const related = EXPORT_DATA.products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
+      const relatedGrid = document.getElementById('relatedProductsGrid');
+      relatedGrid.innerHTML = related.length ? related.map(item => {
+        const fb = (typeof getFallbackImageSvg === 'function') ? getFallbackImageSvg(item.name) : '';
+        return `
+          <div onclick="openProductSpecModal('${item.id}')" class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 overflow-hidden shadow-sm hover:shadow-lg transition-all group cursor-pointer">
+            <div class="aspect-[4/3] bg-surface-container overflow-hidden relative">
+              <img src="${item.image}" alt="${escapeHtml(item.name)}" onerror="this.onerror=null;this.src='${fb}';" class="w-full h-full object-cover group-hover:scale-105 transition-transform"/>
+              <span class="absolute top-2 left-2 bg-primary/80 backdrop-blur text-white text-[9px] font-bold px-2 py-0.5 rounded">HS ${escapeHtml(item.hsCode)}</span>
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-sm text-primary mb-1 truncate">${escapeHtml(item.name)}</h4>
+              <p class="text-xs text-on-surface-variant line-clamp-1 mb-2">${escapeHtml(item.specs)}</p>
+              <div class="flex items-center justify-between text-[11px] text-outline mb-3">
+                <span class="truncate">MOQ: <strong class="text-secondary">${escapeHtml(item.moq)}</strong></span>
+              </div>
+              <div class="flex items-center gap-1.5 pt-2 border-t border-outline-variant/30">
+                <a href="product-detail.html?product=${encodeURIComponent(item.id)}" onclick="event.stopPropagation()" class="flex-1 py-1 text-center text-xs font-bold text-primary hover:text-secondary border border-outline-variant rounded">Full Page</a>
+                <a href="rfq.html?product=${encodeURIComponent(item.id)}&category=${encodeURIComponent(item.category)}&type=bulk" onclick="event.stopPropagation()" class="flex-1 py-1 text-center text-xs font-bold bg-secondary-container hover:bg-secondary text-white rounded">Bulk Quote</a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('') : `<p class="text-xs text-outline col-span-4">No other products in this specific category.</p>`;
+    });
+  </script>
+</body>
+
+</html>
+```
+
+---

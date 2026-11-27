@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Cocohub Logo">
+  <defs>
+    <linearGradient id="cocoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2537"/>
+      <stop offset="100%" stop-color="#1b3a54"/>
+    </linearGradient>
+    <linearGradient id="cocoShell" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fe932c"/>
+      <stop offset="100%" stop-color="#c96b08"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#cocoBg)"/>
+  <!-- Palm / Coco leaves -->
+  <path d="M32 19 C26 11, 16 11, 13 17 C19 16, 25 18, 30 22 Z" fill="#34d399"/>
+  <path d="M32 19 C38 11, 48 11, 51 17 C45 16, 39 18, 34 22 Z" fill="#10b981"/>
+  <path d="M32 19 C30 10, 34 8, 32 7 C29 10, 29 15, 32 19 Z" fill="#6ee7b7"/>
+  <!-- Outer coconut shell -->
+  <circle cx="32" cy="36" r="16" fill="url(#cocoShell)"/>
+  <!-- Inner coconut meat / globe ring -->
+  <circle cx="32" cy="36" r="10.5" fill="#ffffff"/>
+  <!-- Hub / Trade meridian & equator -->
+  <ellipse cx="32" cy="36" rx="4.5" ry="10.5" fill="none" stroke="#0f2537" stroke-width="1.8"/>
+  <line x1="21.5" y1="36" x2="42.5" y2="36" stroke="#0f2537" stroke-width="1.8"/>
+  <circle cx="32" cy="36" r="10.5" fill="none" stroke="#0f2537" stroke-width="1.8"/>
+</svg>
